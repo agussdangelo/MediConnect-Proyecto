@@ -181,12 +181,13 @@ main.container {
 }
 
 .footer-contenedor .footer-acerca-de-compañia {
-    line-height: 1.2em;
+    line-height: 1.3em;
     color: #92999f;
     font-size: 0.8em;
-    font-weight: normal;
+    font-weight: 400;
     margin: 0;
     text-align: justify;
+    margin-top: 1em;
 }
 
 .footer-contenedor .footer-acerca-de-compañia span {
