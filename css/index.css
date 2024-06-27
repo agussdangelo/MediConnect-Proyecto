@@ -57,14 +57,14 @@ main.container {
     bottom: 0;
 }
 
-@media (max-height:800px) {
+/* @media (max-height:800px) {
     footer {
         position: static;
     }
     header {
         padding-top: 40px;
     }
-}
+} */
 
 .footer-contenedor {
     background-color: #2d2a30;
@@ -202,7 +202,7 @@ main.container {
     color: #3F71EA;
 }
 
-@media (max-width: 880px) {
+/* @media (max-width: 880px) {
     .footer-contenedor .footer-izquierda, .footer-contenedor .footer-center, .footer-contenedor .footer-derecha {
         display: block;
         width: 100%;
@@ -212,7 +212,7 @@ main.container {
     .footer-contenedor .footer-center i {
         margin-left: 0;
     }
-}       
+}        */
 
 
 
