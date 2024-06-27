@@ -1,0 +1,136 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.main {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 61%,
+    rgba(9, 68, 121, 1) 80%,
+    rgba(0, 54, 176, 1) 98%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 35%;
+  height: 70%;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 125px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 75%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  max-width: 75%;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.column label,
+.column select,
+.column input {
+  margin-bottom: 25px;
+}
+
+.column input,
+.column select {
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1rem;
+}
+
+.login-form button {
+  background-color: #1877f2;
+  color: white;
+  border-radius: 4px;
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  max-width: 75%;
+  margin-top: 15px;
+}
+
+.login-form button:hover {
+  background-color: white;
+  border: 1px solid #1877f2;
+  color: #1877f2;
+  transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #98a2b3;
+  max-width: 75%;
+  justify-content: space-between;
+}
+
+label[for="terminos"] {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #98a2b3;
+  max-width: 75%;
+  justify-content: space-between;
+}
+
+.login button {
+  background: none;
+  color: #1877f2;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login button:hover {
+  text-decoration: underline;
+}
