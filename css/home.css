@@ -7,9 +7,13 @@
 
 /*Estilos del HEADER */
 
-header{
-  top: 0;
-  position: relative;
+.inicioSesion {
+  margin-left: auto; /* Empuja el botón hacia la derecha */
+  padding-left: 10px; /* Espacio entre los elementos */
+}
+
+.inicioSesion button {
+  text-decoration: #001330; /* No es una propiedad válida para text-decoration */
 }
 
 .navbar{
@@ -30,7 +34,6 @@ header{
 
   .navbar-nav{
     display: flex;
-    margin-right: 50%;
   }
 
 .inicioSesion{
@@ -51,7 +54,7 @@ header{
 /*Estilos MAIN y SECCION IMAGEN */
 
 .text-center{
-  margin-top: 2em;
+  margin-top: 0.1em;
 }
 
 .titulo-medic{
