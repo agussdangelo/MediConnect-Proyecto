@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Registro - Mediconnect</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="card">
+        <h2>Creá tu cuenta</h2>
+        <form class="login-form">
+          <div class="form">
+            <div class="column">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                placeholder="Ingresá tu nombre"
+              />
+
+              <label for="apellido">Apellido:</label>
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                required
+                placeholder="Ingresá tu apellido"
+              />
+
+              <label for="genero">Género:</label>
+              <select id="genero" name="genero" required>
+                <option value="" disabled selected>Seleccioná tu género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+              </select>
+            </div>
+            <div class="column">
+              <label for="nacimiento">Fecha de nacimiento:</label>
+              <input
+                type="text"
+                id="nacimiento"
+                name="nacimiento"
+                required
+                placeholder="DD/MM/AAAA"
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Ingresá tu email"
+              />
+
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Ingresá tu contraseña"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="terminos">
+              <input type="checkbox" id="terminos" name="terminos" required />
+              Acepto los términos y condiciones
+            </label>
+          </div>
+
+          <button type="submit">Crear</button>
+        </form>
+        <div class="login">
+          <p>Ya tienes una cuenta?</p>
+          <a href="./login.html" class="button">Inicia sesión</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

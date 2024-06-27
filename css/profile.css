@@ -1,0 +1,197 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend Deca Variable', sans-serif;
+}
+
+/*Estilos del HEADER */
+
+.navbar{
+  background-color: #001330;
+  font-size: 20px;
+  
+}
+
+.nav-link{
+  color: white;
+}
+
+.container-menu{
+  margin: 10px;
+}
+
+.navbar-nav{
+  display: flex;
+  margin-right: 66%;
+  
+}
+
+.inicioSesion{
+display: flex;
+
+}
+
+.texto-fondo{
+font-size: 5em;
+width: 50%;
+}
+
+.parrafo-fondo{
+font-size: 2em;
+width: 40%;
+}
+
+
+footer {
+background-color: #f8f9fa;
+text-align: center;
+padding: 1rem 0;
+margin-top: 5em;
+}
+
+@media (max-height:800px) {
+footer {
+    position: static;
+}
+header {
+    padding-top: 40px;
+}
+} 
+
+.footer-contenedor {
+background-color: #2d2a30;
+box-sizing: border-box;
+width: 100%;
+height: auto;
+text-align: left;
+font: bold 1em sans-serif;
+padding: 3.1em 3.1em 3.7em 3.1em;
+
+}
+
+.footer-contenedor .footer-izquierda, .footer-contenedor .footer-center, .footer-contenedor .footer-derecha {
+display: inline-block;
+vertical-align: top;
+}
+
+/* La parte izquierda del footer */
+
+.footer-contenedor .footer-izquierda {
+width: 30%;
+}
+
+.footer-contenedor h3 {
+color: #ffffff;
+font-size: 3em;
+margin: 0;
+}
+
+
+.footer-contenedor h3 span {
+color: #1aabee;
+}
+
+/* La parte de links del footer */
+
+.footer-contenedor .footer-links {
+color: #ffffff;
+margin: 1.2em 0 0.7em;
+}
+
+.footer-contenedor .footer-links a {
+display: inline-block;
+line-height: 1.8;
+text-decoration: none;
+color: inherit;
+padding-left: 0.4em;
+}
+
+.footer-contenedor .footer-derechos {
+color: #8f9296;
+font-size: 0.8em;
+font-weight: normal;
+margin: 0;
+}
+
+/* La parte central del footer*/
+
+.footer-contenedor .footer-center {
+width: 35%;
+padding-left: 2em;
+}
+
+.footer-contenedor .footer-center i {
+background-color: #33383b;
+color: #ffffff;
+font-size: 1.5em;
+width: 2.3em;
+height: 2.3em;
+border-radius: 50%;
+text-align: center;
+line-height: 2.6em;
+margin: 0.6em 0.7em;
+vertical-align: middle;
+}
+
+.footer-contenedor .footer-center i.fa-envelope {
+font-size: 1.2em;
+line-height: 2.3em;
+}
+
+.footer-contenedor .footer-center i.fa-map-marker {
+font-size: 1.2em;
+line-height: 2.3em;
+}
+
+.footer-contenedor .footer-center i.fa-phone {
+font-size: 1.2em;
+line-height: 2.3em;
+}
+
+.footer-contenedor .footer-center p {
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin: 0;
+}
+
+.footer-contenedor .footer-center p span {
+display: block;
+font-weight: normal;
+font-size: 0.8em;
+line-height: 2;
+}
+
+.footer-contenedor .footer-center p a {
+color: #1aabee;
+text-decoration: none;
+}
+
+/* La parte derecha del footer*/
+
+.footer-contenedor .footer-derecha {
+width: 30%;
+}
+
+.footer-contenedor .footer-acerca-de-compañia {
+line-height: 1.3em;
+color: #92999f;
+font-size: 0.8em;
+font-weight: 400;
+margin: 0;
+text-align: justify;
+margin-top: 1em;
+}
+
+.footer-contenedor .footer-acerca-de-compañia span {
+display: block;
+color: #ffffff;
+font-size: 1.1em;
+font-weight: bold;
+margin-bottom: 1.25em;
+}
+
+.footer-links a:hover {
+color: #3F71EA;
+}
