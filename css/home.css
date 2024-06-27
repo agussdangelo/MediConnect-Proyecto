@@ -8,13 +8,42 @@
 /*Estilos del HEADER */
 
 .navbar{
-    background-color: #0075fc;
+    background-color: #001330;
+    font-size: 20px;
+    
   }
 
-.container-menu{
-    margin-left: 10px;
+  .nav-link{
+    color: white;
+  }
+
+  .container-menu{
+    margin: 10px;
+  }
+
+  .navbar-nav{
+    display: flex;
+    margin-right: 66%;
+    
+  }
+
+.inicioSesion{
+  display: flex;
+  
 }
 
+.texto-fondo{
+  font-size: 5em;
+  width: 50%;
+}
+
+.parrafo-fondo{
+  font-size: 2em;
+  width: 40%;
+}
+
+
+/*Estilos MAIN y SECTCION IMAGEN */
 
 main.container {
     padding: 0;
@@ -24,21 +53,75 @@ main.container {
     max-width: 100%;
   }
 
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+  .card {
+    width: 70%;
+    
+    
+  }
+
+  .card-body{
+    height: 120px;
+  }
+  
+  .card-body-otro{
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .contenedor-boton{
+    margin-top: 40px;
+  }
+  
+.contenedor-titulo{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.titulo-medic{
+  font-size: 3em;
+}
+
+  .contenedor-info{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .contenedor-servicios{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 50px;
+  }
+
+ 
+
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh; /* Establece la altura al 100% de la ventana gráfica (viewport height) */
+    height: 100vh; 
   }
 
 
   .hero-background {
     background-size: cover;
     background-position: center;
-    height: 100%; /* Ajusta la altura al 100% */
+    height: 100%; 
   }
   
   .hero-content {
-    max-width: 40%; /* Establece un ancho máximo para mantener la legibilidad */
+    display: flex;
+    position: relative;
+    top: 100px;
   }
   
   .hero-content h5{
@@ -47,7 +130,7 @@ main.container {
   
   .hero-content h1,
   .hero-content h5 {
-    
-    padding: 0.1em; /* Ajusta según sea necesario */
-    display: inline-block; /* Para que el fondo abarque solo el contenido del texto */
+    padding: 0.1em; 
+    display: inline-block; 
   }
+
