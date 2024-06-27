@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/turno.css" />
+    <link rel="stylesheet" href="../css/confirmacion.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,7 +27,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
-    <title>Turnos - MediConnect</title>
+    <title>Confirmación - MediConnect</title>
   </head>
 
   <body>
@@ -80,56 +80,36 @@
 
     <!-- Main -->
     <main>
-      <section class="container">
-        <h1>Solicitá tu turno:</h1>
-        <form class="form">
-          <div>
-            <label for="nombre">Nombre del paciente:</label>
-            <input
-              class="form-control"
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingresa el nombre del paciente"
-              required
-            />
-          </div>
+      <div class="card-container">
+        <i class="fa-solid fa-circle-check fa-2x icon"></i>
+        <h3>Datos del turno</h3>
 
-          <div>
-            <label for="especialidad">Selecciona especialidad:</label>
-            <select
-              class="form-control"
-              id="especialidad"
-              name="especialidad"
-              required
-            >
-              <option value="" disabled selected>
-                Selecciona una especialidad
-              </option>
-              <option value="cardiologia">Cardiología</option>
-              <option value="dermatologia">Dermatología</option>
-              <option value="neurologia">Neurología</option>
-              <option value="pediatria">Pediatría</option>
-              <option value="psicologia">Psicología</option>
-            </select>
-          </div>
+        <div class="divider"></div>
 
-          <div>
-            <label for="datetime">Seleccioná fecha y horario deseado:</label>
-            <input
-              id="datetime"
-              name="datetime"
-              class="form-control"
-              type="datetime"
-              placeholder="DD/MM/AAAA HH:MM"
-            />
-          </div>
+        <div>
+          <span>Fecha: </span>
+          <span>11/9/2024</span>
+        </div>
+        <div>
+          <span>Hora: </span>
+          <span>08:25 AM</span>
+        </div>
+        <div>
+          <span>Profesional: </span>
+          <span>Dr. Rodolfo Fernandez</span>
+        </div>
 
-          <button class="button" type="submit" onclick="redirectToUrl()">
-            Solicitar
-          </button>
-        </form>
-      </section>
+        <div class="divider"></div>
+
+        <div class="info">
+          <i class="fa-solid fa-envelope fa-2x icon-info"></i>
+          <span>Enviar datos del turno por email</span>
+        </div>
+        <div class="info">
+          <i class="fa-solid fa-square-phone fa-2x icon-info"></i>
+          <span>Enviar datos del turno por SMS</span>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -190,10 +170,6 @@
     <script src="js/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
-      function redirectToUrl() {
-        window.location.href = "./reserva.html";
-      }
-
       flatpickr("input[type=datetime]", {
         enableTime: true,
         dateFormat: "Y-m-d H:i",
