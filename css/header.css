@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #001330;
+  font-size: 20px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.container-menu {
+  margin: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.navbar navbar-collapse {
+  position: relative;
+}
+
+.inicioSesion {
+  display: flex;
+  position: absolute;
+  right: 15px;
+}
+
+.texto-fondo {
+  font-size: 5em;
+  width: 50%;
+}
+
+.parrafo-fondo {
+  font-size: 2em;
+  width: 40%;
+}
