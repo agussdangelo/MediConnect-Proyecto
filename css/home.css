@@ -7,6 +7,11 @@
 
 /*Estilos del HEADER */
 
+header{
+  top: 0;
+  position: relative;
+}
+
 .navbar{
     background-color: #001330;
     font-size: 20px;
