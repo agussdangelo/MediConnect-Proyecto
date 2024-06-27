@@ -24,7 +24,7 @@ body {
 
 .card {
   width: 35%;
-  height: 65%;
+  height: 70%;
   background-color: white;
   border-radius: 10px;
   padding-left: 125px;
@@ -75,7 +75,6 @@ body {
 
 .login-form button {
   background-color: #1877f2;
-  border: 1px solid #1877f2;
   color: white;
   border-radius: 4px;
   padding: 15px;
@@ -111,4 +110,27 @@ label[for="terminos"] {
 
 input[type="checkbox"] {
   margin-right: 10px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #98a2b3;
+  max-width: 75%;
+  justify-content: space-between;
+}
+
+.login button {
+  background: none;
+  color: #1877f2;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login button:hover {
+  text-decoration: underline;
 }
