@@ -198,29 +198,6 @@ main.container {
     margin-bottom: 1.25em;
 }
 
-.footer-contenedor .footer-icons {
-    margin-top: 1.5em;
-}
-
-.footer-contenedor .footer-icons a {
-    display: inline-block;
-    width: 2.1em;
-    height: 2.1em;
-    cursor: pointer;
-    background-color: #33383b;
-    border-radius: 0.1em;
-    font-size: 1.2em;
-    color: #ffffff;
-    text-align: center;
-    line-height: 2.2em;
-    margin-right: 0.1em;
-    margin-bottom: 0.1em;
-}
-
-.footer-contenedor .footer-icons a:hover {
-    background-color: #3F71EA;
-}
-
 .footer-links a:hover {
     color: #3F71EA;
 }
