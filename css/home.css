@@ -110,7 +110,7 @@ main.container {
 .contenedor-titulo{
   display: flex;
   justify-content: center;
-  margin-top: 25%;
+  margin-top: 5%;
 }
 
 .titulo-medic{
