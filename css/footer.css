@@ -1,16 +1,16 @@
 footer {
-    position: absolute;
-    bottom: -109em;
+    position: fixed;
+    bottom: 0;
 }
 
-/* @media (max-height:800px) {
+@media (max-height:800px) {
     footer {
         position: static;
     }
     header {
         padding-top: 40px;
     }
-} */
+}
 
 .footer-contenedor {
     background-color: #2d2a30;

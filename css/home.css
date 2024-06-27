@@ -10,7 +10,7 @@
 .navbar{
     background-color: #001330;
     font-size: 20px;
-    
+
   }
 
   .nav-link{
@@ -19,17 +19,17 @@
 
   .container-menu{
     margin: 10px;
+    top: 0;
+    display: flex;
   }
 
   .navbar-nav{
     display: flex;
-    margin-right: 66%;
-    
+    margin-right: 50%;
   }
 
 .inicioSesion{
-  display: flex;
-  
+  width: 5%;
 }
 
 .texto-fondo{
@@ -43,7 +43,19 @@
 }
 
 
-/*Estilos MAIN y SECTCION IMAGEN */
+/*Estilos MAIN y SECCION IMAGEN */
+
+.text-center{
+  margin-top: 2em;
+}
+
+.titulo-medic{
+  padding: 0.2em;
+}
+
+.text-center h5{
+  margin-bottom: 1em;
+}
 
 main.container {
     padding: 0;
@@ -60,14 +72,19 @@ main.container {
 
   .card {
     width: 70%;
-    
-    
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
 
   .card-body{
-    height: 120px;
+    height: 10em;
   }
   
+  .card-body i{
+    margin-top: 0.1em;
+    text-align: center;
+  }
+
   .card-body-otro{
     height: 180px;
     margin-top: 10px;
@@ -81,7 +98,7 @@ main.container {
 .contenedor-titulo{
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 25%;
 }
 
 .titulo-medic{
