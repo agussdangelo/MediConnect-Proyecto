@@ -7,6 +7,12 @@
 
 /*Estilos del HEADER */
 
+
+.hover-slide {
+  transition: transform 0.3s ease;
+ 
+}
+
 header{
   top: 0;
   position: relative;
@@ -107,7 +113,7 @@ main.container {
 .contenedor-titulo{
   display: flex;
   justify-content: center;
-  margin-top: 25%;
+  margin-top: 2%;
 }
 
 .titulo-medic{

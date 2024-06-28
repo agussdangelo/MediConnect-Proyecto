@@ -41,4 +41,11 @@ $(function(){
     }).mouseleave(function(){
         modalidadesDropdown.hide();
     });
+
+    // Hover slide effect
+    $(".hover-slide").mouseenter(function(){
+        $(this).css("transform", "translateX(10px)");
+    }).mouseleave(function(){
+        $(this).css("transform", "translateX(0)");
+    });
 });
