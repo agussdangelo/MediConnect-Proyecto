@@ -11,30 +11,78 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>MediConnect</title>
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="./img/Icono.png">
+  <title>Home - MediConnect</title>
 </head>
 
 <body>
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-menu">
-        <a class="navbar-brand" href="#" style="color: white;"><img src="./img/Isologo.png" alt="logo" height="60"></a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown"><a class="nav-link " href="#" style="color: white;">Home</a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown-toggle" href="#"
-              aria-expanded="false" style="color: white;">Especialidades</a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown-toggle" href="#"
-              aria-expanded="false" style="color: white;">Centros medicos</a></li>
-        </ul>
-        <div class="inicioSesion">
-          <a href="./views/login.html"><button type="button" class="btn btn-light" style="text-decoration:#001330;">Iniciar Sesion</button></a>
-           <a href="./views/turno.html"><button type="button" class="btn btn-light" style="text-decoration:#001330;">Solicitá un turno</button></a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html" style="color: white;"><img src="./img/Isologo.png" alt="logo" height="60"></a>
+        <a class="navbar-brand" href="./index.html" style="color: white;">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link btn btn-dark dropdown-toggle cursos-dropdown-toggle" href="./views/especialidades.html"
+                data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                Especialidades
+              </a>
+              <ul class="cursos-dropdown dropdown-menu mx-0 rounded-0 p-0">
+                <li class="hover-slide"><a class="dropdown-item" href="#">Alergología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Antestología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Cardiología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Dermatología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Endocrinología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Gastroenterología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Geriatria</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Hematología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Infectología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Nefrología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Neumología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Neurología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Nutriología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Obstetricia</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Oftalmología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Oncología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Ortopedia</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link btn btn-dark dropdown-toggle modalidades-dropdown-toggle" data-bs-toggle="dropdown"
+                  href="#" aria-expanded="false" style="color: white;">
+                  Centros Médicos
+                </a>
+                <ul class="modalidades-dropdown dropdown-menu mx-0 rounded-0 p-0">
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Palermo</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Mitre</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Quilmes</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad San Isidro</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad San Isidro
+                      Fleming</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Ramos Mejia</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Barrio Norte</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Dupuytren</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        
+         <div>
+            <a href="./views/login.html"><button type="button" class="btn btn-light"
+              style="text-decoration:#001330;">Iniciar Sesión</button></a>
+            <a href="./views/turno.html"><button type="button" class="btn btn-light"
+              style="text-decoration:#001330;">Solicitar un turno</button></a>
+          </div>
       </div>
     </nav>
   </header>
@@ -47,8 +95,9 @@
         <div class="hero-content ml-5 d-flex flex-column align-items-start">
           <h1 class="texto-fondo">Mejor clínica médica
             Dando vida a la salud para toda la familia</h1>
-          <h5 class="parrafo-fondo">Descubre nuestros servicios médicos y toma el control de tu salud desde cualquier lugar, en cualquier momento.</h5>
-          <a href="#" class="btn btn-primary" style="width: 200px; background-color: #001330;" >Reciba atención ahora</a>
+          <h5 class="parrafo-fondo">Descubre nuestros servicios médicos y toma el control de tu salud desde cualquier
+            lugar, en cualquier momento.</h5>
+          <a href="#" class="btn btn-primary" style="width: 200px; background-color: #001330;">Reciba atención ahora</a>
         </div>
       </div>
     </section>
@@ -74,7 +123,7 @@
           <h5 class="card-title">Cirugía dental</h5>
           <p class="card-text">Nos dedicamos al servicios de cirugía dental de alta calidad para el bienestar de tu
             salud bucal.</p>
-          <a href="#" class="btn btn-primary"  style="background-color: #001330;">Leer Más</a>
+          <a href="#" class="btn btn-primary" style="background-color: #001330;">Leer Más</a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -83,7 +132,7 @@
           <h5 class="card-title">Salud infantil</h5>
           <p class="card-text">Nos dedicamos a proporcionar servicios médicos de alta calidad para el bienestar de tus
             hijos. </p>
-          <a href="#" class="btn btn-primary"  style="background-color: #001330;">Leer Más</a>
+          <a href="#" class="btn btn-primary" style="background-color: #001330;">Leer Más</a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -92,7 +141,7 @@
           <h5 class="card-title">Salud Familiar</h5>
           <p class="card-text">Nos dedicamos a proporcionar servicios médicos de alta calidad para el bienestar de tu
             familia.</p>
-          <a href="#" class="btn btn-primary"  style="background-color: #001330;">Leer Más</a>
+          <a href="#" class="btn btn-primary" style="background-color: #001330;">Leer Más</a>
         </div>
       </div>
 
@@ -155,7 +204,7 @@
 
       </div>
       <div class="contenedor-boton">
-        <a href="#" class="btn btn-primary" style= "background-color: #001330;">Ver todos los Centros Médicos</a>
+        <a href="#" class="btn btn-primary" style="background-color: #001330;">Ver todos los Centros Médicos</a>
       </div>
     </section>
 
@@ -163,14 +212,14 @@
 
   <footer class="footer-contenedor">
     <div class="footer-izquierda">
-        <h3>Consultorios <span>MediConnect</span></h3>
-        <p class="footer-links">
-            <a href="#">Home</a>
-            <a href="#">Perfil</a>
-            <a href="#">Personal Medico</a>
-        </p>
+      <h3>Consultorios <span>MediConnect</span></h3>
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Perfil</a>
+        <a href="#">Personal Medico</a>
+      </p>
 
-        <p class="footer-derechos">Copyright © 2024 <strong>MediConnect</strong>
+      <p class="footer-derechos">Copyright © 2024 <strong>MediConnect</strong>
         Todos los derechos reservados.</p>
     </div>
 
@@ -178,7 +227,7 @@
       <div>
         <i class="fa fa-map-marker"></i>
         <p><span>San Justo, La Matanza</span>
-        Argentina</p>
+          Argentina</p>
       </div>
       <div>
         <i class="fa fa-phone"></i>
@@ -193,19 +242,71 @@
     <div class="footer-derecha">
       <p class="footer-acerca-de-compañia">
         <span>Acerca de la Clínica</span>
-        <strong>En MediConnect, nos dedicamos a brindar atención médica de calidad y personalizada para todas las 
-          necesidades de salud de nuestra comunidad. Fundada en 1994, nuestra clínica se ha 
-          establecido como un referente en el cuidado integral del paciente, combinando tecnología de 
+        <strong>En MediConnect, nos dedicamos a brindar atención médica de calidad y personalizada para todas las
+          necesidades de salud de nuestra comunidad. Fundada en 1994, nuestra clínica se ha
+          establecido como un referente en el cuidado integral del paciente, combinando tecnología de
           vanguardia con un equipo de profesionales altamente calificados.</strong>
       </p>
     </div>
   </footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="js/home.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var cursosDropdown = $(".cursos-dropdown");
+      var cursosTitle = $(".cursos-dropdown-toggle");
+
+      var modalidadesDropdown = $(".modalidades-dropdown");
+      var modalidadesTitle = $(".modalidades-dropdown-toggle");
+
+      cursosDropdown.hide();
+      modalidadesDropdown.hide();
+
+      // CURSOS Dropdown
+      cursosTitle.mouseenter(function () {
+        cursosDropdown.show();
+        modalidadesDropdown.hide();
+      });
+
+      $(".navbar").mouseleave(function () {
+        cursosDropdown.hide();
+      });
+
+      cursosDropdown.mouseenter(function () {
+        cursosDropdown.show();
+        modalidadesDropdown.hide();
+      }).mouseleave(function () {
+        cursosDropdown.hide();
+      });
+
+      // MODALIDADES Dropdown
+      modalidadesTitle.mouseenter(function () {
+        modalidadesDropdown.show();
+        cursosDropdown.hide();
+      });
+
+      $(".navbar").mouseleave(function () {
+        modalidadesDropdown.hide();
+      });
+
+      modalidadesDropdown.mouseenter(function () {
+        modalidadesDropdown.show();
+        cursosDropdown.hide();
+      }).mouseleave(function () {
+        modalidadesDropdown.hide();
+      });
+
+      // Hover slide effect
+      $(".hover-slide").mouseenter(function () {
+        $(this).css("transform", "translateX(10px)");
+      }).mouseleave(function () {
+        $(this).css("transform", "translateX(0)");
+      });
+    });
+  </script>
 </body>
 
 </html>
