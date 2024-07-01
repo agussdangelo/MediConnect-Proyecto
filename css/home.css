@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lexend Deca Variable', sans-serif;
+=======
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend Deca Variable", sans-serif;
+>>>>>>> b4f3c80d219dafbcca120b6cf6264feeccfbeda1
 }
 
 /* body{
@@ -18,8 +26,10 @@
 
 .inicioSesion button {
   text-decoration: #001330; /* No es una propiedad válida para text-decoration */
+  margin-right: 10px;
 }
 
+<<<<<<< HEAD
 .encabezado{
   top: 0;
   width: 100%;
@@ -32,67 +42,72 @@
     font-size: 20px;
     top: 0;
   }
+=======
+.navbar {
+  background-color: #001330;
+  font-size: 20px;
+}
 
-  .nav-link{
-    color: white;
-  }
+.nav-link {
+  color: white;
+}
+>>>>>>> b4f3c80d219dafbcca120b6cf6264feeccfbeda1
 
-  .container-menu{
-    margin: 10px;
-    top: 0;
-    display: flex;
-    align-items: center;
-  }
+.container-menu {
+  margin: 10px;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
 
-  .navbar-nav{
-    display: flex;
-  }
+.navbar-nav {
+  display: flex;
+}
 
-.inicioSesion{
+.inicioSesion {
   display: flex;
   padding-right: 12px;
   margin-left: auto;
-  
 }
 
-.texto-fondo{
+.texto-fondo {
   font-size: 5em;
   width: 50%;
 }
 
-.parrafo-fondo{
+.parrafo-fondo {
   font-size: 2em;
   width: 40%;
 }
 
-
 /*Estilos MAIN y SECCION IMAGEN */
 
-.text-center{
+.text-center {
   margin-top: 0.1em;
 }
 
-.titulo-medic{
+.titulo-medic {
   padding: 0.2em;
 }
 
-.text-center h5{
+.text-center h5 {
   margin-bottom: 1em;
 }
 
 main.container {
-    padding: 0;
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 100%;
-  }
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
 
 .col {
   display: flex;
   justify-content: center;
 }
 
+<<<<<<< HEAD
   .card {
     width: 70%;
     margin-left: 0.5em;
@@ -107,70 +122,82 @@ main.container {
     margin-top: 0.1em;
     text-align: center;
   }
+=======
+.card {
+  width: 70%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
 
-  .card-body-otro{
-    height: 180px;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
+.card-body {
+  height: 10em;
+}
+>>>>>>> b4f3c80d219dafbcca120b6cf6264feeccfbeda1
 
-  .contenedor-boton{
-    margin-top: 40px;
-  }
-  
-.contenedor-titulo{
+.card-body i {
+  margin-top: 0.1em;
+  text-align: center;
+}
+
+.card-body-otro {
+  height: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contenedor-boton {
+  margin-top: 40px;
+}
+
+.contenedor-titulo {
   display: flex;
   justify-content: center;
   margin-top: 25%;
 }
 
-.titulo-medic{
+.titulo-medic {
   font-size: 3em;
 }
 
-  .contenedor-info{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-  }
+.contenedor-info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
 
-  .contenedor-servicios{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-bottom: 50px;
-  }
-
- 
+.contenedor-servicios {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 50px;
+}
 
 .hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
-  }
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
 
+.hero-background {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
 
-  .hero-background {
-    background-size: cover;
-    background-position: center;
-    height: 100%; 
-  }
-  
-  .hero-content {
-    display: flex;
-    position: relative;
-    top: 100px;
-  }
-  
-  .hero-content h5{
-    max-width: 75%;
-  }
-  
-  .hero-content h1,
-  .hero-content h5 {
-    padding: 0.1em; 
-    display: inline-block; 
-  }
+.hero-content {
+  display: flex;
+  position: relative;
+  top: 100px;
+}
 
+.hero-content h5 {
+  max-width: 75%;
+}
+
+.hero-content h1,
+.hero-content h5 {
+  padding: 0.1em;
+  display: inline-block;
+}
