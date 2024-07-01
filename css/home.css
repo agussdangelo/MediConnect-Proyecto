@@ -24,8 +24,7 @@
 .encabezado{
   top: 0;
   width: 100%;
-  /* position: fixed; */
-  padding: 0px 0px;
+  padding: 0 0;
 }
 
 .navbar{
@@ -52,13 +51,18 @@
 }
 
 .texto-fondo {
-  font-size: 5em;
-  width: 50%;
+  font-size: 4.9em;
+  width: 55%;
+}
+
+.texto-fondo strong{
+  color: #0076d4;
 }
 
 .parrafo-fondo {
   font-size: 2em;
   width: 40%;
+  margin-top: 1em;
 }
 
 /*Estilos MAIN y SECCION IMAGEN */
@@ -121,7 +125,7 @@ main.container {
 .contenedor-titulo {
   display: flex;
   justify-content: center;
-  margin-top: 25%;
+  margin-top: 8%;
 }
 
 .titulo-medic {
@@ -146,7 +150,8 @@ main.container {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+
 }
 
 .hero-background {
@@ -158,7 +163,7 @@ main.container {
 .hero-content {
   display: flex;
   position: relative;
-  top: 100px;
+  top: 1em;
 }
 
 .hero-content h5 {
