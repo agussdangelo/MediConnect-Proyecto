@@ -71,10 +71,6 @@
   margin-top: 0.1em;
 }
 
-.titulo-medic {
-  padding: 0.2em;
-}
-
 .text-center h5 {
   margin-bottom: 1em;
 }
@@ -129,7 +125,7 @@ main.container {
 }
 
 .titulo-medic {
-  font-size: 3em;
+  font-size: 4em;
 }
 
 .contenedor-info {
