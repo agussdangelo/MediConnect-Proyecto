@@ -81,8 +81,9 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 0.4em;
     margin-bottom: 0.5em;
-    font-size: x-large;
+    font-size: 1.5em;
 }
 
 .footer-contenedor .footer-center {
@@ -142,6 +143,13 @@ footer {
 
 .footer-contenedor .footer-derecha {
     width: 30%;
+}
+
+.footer-contenedor .footer-derecha .materia{
+    margin-top: 3.3em;
+    width: 100%;
+    color: #857f7f;
+    text-align: right;
 }
 
 .footer-contenedor .footer-acerca-de-compañia {

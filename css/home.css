@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lexend Deca Variable', sans-serif;
-=======
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Lexend Deca Variable", sans-serif;
->>>>>>> b4f3c80d219dafbcca120b6cf6264feeccfbeda1
 }
 
 /* body{
@@ -29,7 +21,6 @@
   margin-right: 10px;
 }
 
-<<<<<<< HEAD
 .encabezado{
   top: 0;
   width: 100%;
@@ -42,16 +33,6 @@
     font-size: 20px;
     top: 0;
   }
-=======
-.navbar {
-  background-color: #001330;
-  font-size: 20px;
-}
-
-.nav-link {
-  color: white;
-}
->>>>>>> b4f3c80d219dafbcca120b6cf6264feeccfbeda1
 
 .container-menu {
   margin: 10px;
@@ -107,7 +88,6 @@ main.container {
   justify-content: center;
 }
 
-<<<<<<< HEAD
   .card {
     width: 70%;
     margin-left: 0.5em;
@@ -122,17 +102,6 @@ main.container {
     margin-top: 0.1em;
     text-align: center;
   }
-=======
-.card {
-  width: 70%;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-
-.card-body {
-  height: 10em;
-}
->>>>>>> b4f3c80d219dafbcca120b6cf6264feeccfbeda1
 
 .card-body i {
   margin-top: 0.1em;
