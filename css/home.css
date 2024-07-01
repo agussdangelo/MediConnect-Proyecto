@@ -1,9 +1,13 @@
 *{
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Lexend Deca Variable', sans-serif;
 }
+
+/* body{
+  overflow-x: hidden;
+} */
 
 /*Estilos del HEADER */
 
@@ -16,10 +20,17 @@
   text-decoration: #001330; /* No es una propiedad válida para text-decoration */
 }
 
+.encabezado{
+  top: 0;
+  width: 100%;
+  /* position: fixed; */
+  padding: 0px 0px;
+}
+
 .navbar{
     background-color: #001330;
     font-size: 20px;
-
+    top: 0;
   }
 
   .nav-link{
@@ -87,7 +98,7 @@ main.container {
     margin-left: 0.5em;
     margin-right: 0.5em;
   }
-
+  
   .card-body{
     height: 10em;
   }
@@ -110,7 +121,7 @@ main.container {
 .contenedor-titulo{
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 25%;
 }
 
 .titulo-medic{
