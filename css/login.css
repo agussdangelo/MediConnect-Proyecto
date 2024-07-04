@@ -1,0 +1,99 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.main {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 61%,
+    rgba(9, 68, 121, 1) 80%,
+    rgba(0, 54, 176, 1) 98%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 35%;
+  height: 50%;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 125px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 75%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  gap: 10px;
+}
+
+.login-form input {
+  margin-bottom: 25px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1rem;
+}
+
+.login-form button {
+  background-color: #1877f2;
+  color: white;
+  border-radius: 4px;
+  padding: 15px;
+  border-color: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #1877f2;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: white;
+  color: #1877f2;
+  transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #98a2b3;
+  max-width: 75%;
+  justify-content: space-between;
+}
+
+.register button {
+  background: none;
+  color: #1877f2;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.register button:hover {
+  text-decoration: underline;
+}
