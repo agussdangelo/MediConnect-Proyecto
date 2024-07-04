@@ -95,7 +95,21 @@ main.container {
   transition: transform 0.2s;
   padding-bottom: 0.7em;
 }
+
+.card-servicio{
+  width: 70%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  transition: transform 0.7s;
+  padding-bottom: 0.7em;
+}
   
+.card-servicio:hover{
+  transform: scale(1.1);
+  background-color: #001330;
+  color: #fff;
+}
+
 .card-body{
   height: 10em;
 }
@@ -135,6 +149,11 @@ main.container {
   font-size: 4em;
 }
 
+.titulo-medic-servicio {
+  font-size: 4em;
+  margin-top: 10%;
+}
+
 .contenedor-info {
   display: flex;
   flex-direction: column;
@@ -161,6 +180,7 @@ main.container {
   background-size: cover;
   background-position: center;
   height: 100%;
+  position: absolute;
 }
 
 .hero-content {
@@ -183,10 +203,7 @@ main.container {
   display: inline-block;
 }
 
-
-
 @media only screen and (max-width: 1920px) {
- 
 .hero-section{
   height: 100vh;
   width: 100%;
@@ -223,7 +240,7 @@ main.container {
   @media only screen and (max-width: 1024px) {
     
     .container{
-     height: 105em;
+      height: 105em;
     }
     
     .hero-background {
@@ -254,41 +271,41 @@ main.container {
       
     }
 
-   .titulo-medic{
+    .titulo-medic{
     
     justify-content: space-between;
     position: relative;
     bottom: 260px;
-   
-   }
 
-   .subtitlo-medic{
+    }
+
+    .subtitlo-medic{
     justify-content: space-between;
     position: relative;
     bottom: 260px;
     
-   }
+    }
 
-   .row{
-     display: flex;
+    .row{
+      display: flex;
       justify-content: space-between;
       position: relative;
       bottom: 250px;
       height: 370px;
       
-   }
+    }
 
-   .contenedor-boton{
+    .contenedor-boton{
     position: relative;
     bottom: 250px;
-   }
+    }
 
-   .footer-contenedor{
+    .footer-contenedor{
     margin: auto;
-   }
+    }
 
 
-   @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
     .hero-background {
       background-size: cover;
       background-position: center;
@@ -321,8 +338,7 @@ main.container {
       flex-wrap: wrap;
       bottom: 370px;
       height: 340px;
-      
-     font-size: 14px;
+      font-size: 14px;
     }
     
     .card-body-otro{

@@ -3,9 +3,14 @@ footer {
     bottom: 0;
 }
 
-@media (max-height:800px) {
-    footer {
-        position: static;
+@media (max-height:768px) {
+    .card-body{
+        position: relative;
+    }
+    .footer-contenedor {
+        position: relative;
+        display: flex;
+        margin-top: 70%;
     }
     header {
         padding-top: 40px;
