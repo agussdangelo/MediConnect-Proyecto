@@ -1,0 +1,248 @@
+.menu-lateral{
+    background: #363636;
+    color: #007bff;
+    height: 50em;
+    
+  }
+  
+  .flex-column{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin:15px;
+    font-size: 20px;
+    height: 300px;
+}
+
+.flex-column :hover{
+background-color: #007bff;
+border: 1px solid  #007bff;
+padding: 5px;
+}
+
+.container-turno{
+    display: flex;
+    background-color: #001330;
+    color: white;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.turno-pendiente{
+    font-size: 15px;
+}
+
+.alert{
+    background-color:  #001330;
+    color: white;
+    text-align: center;
+    border-radius: 0;
+  }  
+  
+  .card-header {
+    background-color: #001330 !important;
+    color: white;
+    
+  }
+  .card-body{
+    background-color: #363636;
+  }
+  .tarea > div{
+    background-color: #444444;
+    color: white;
+  }
+  
+  .acordeon-header{
+    background-color: #363636!important;
+    border-color: white !important;
+    border-width: 1px !important;
+  }
+  .acordeon-header > h5 > button, .acordeon-header > h5 > button:hover{
+    color: white;
+    text-decoration: none;
+  }
+  .card {
+    border: none !important;
+  }
+  .categoria-seleccionada{
+    background-color: #444444 ;
+  }
+  .table > thead > tr > th, .table > tbody > tr > td, .table > tbody > tr > th {  
+    background-color: #363636 ;
+    color: white;
+  }
+  
+  input{
+      height: 2.5em;
+      padding: 4px 8px 4px 8px;
+      background: #F7F6F6;
+      color: #444444;
+      border-color: #000000;
+      border-width: 1px;
+      border-style: solid;
+      text-align: left;
+  }
+  textarea{
+    height: 7em;
+      padding: 4px 8px 4px 8px;
+      background: #F7F6F6;
+      color: #444444;
+      border-color: #000000;
+      border-width: 1px;
+      border-style: solid;
+      text-align: left;
+  }
+  .avatar{
+      background: #FFFFFF;
+      border-color: #606060;
+      border-width: 2px;
+      border-style: solid;
+  }
+  .navbar-clase{
+    background: #444444;
+  }
+  .container-clase{
+    background: #232323;
+    color: white;
+  }
+  .foto-perfil{
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+  }
+  .boton-llamada{
+    margin-right: 1.5em;
+  }
+  .offcanvas{
+    background: #232323;
+    color: white;
+  }
+  .chat-message {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #01523f;
+    text-align: right;
+    float: right;
+  }
+  .chat-message-adversary {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #444444;
+    text-align: left;
+    float: left;
+  }
+  
+  
+  /*BUSQUEDA*/
+  .search-section {
+    background-color: #01523f;
+    color: white;
+    padding: 10px;
+  }
+  
+  .course-image {
+    width: 14em; 
+    height: 11.75em; 
+    object-fit: cover;
+  }
+  
+  .border-grey{
+    border-color: #606060;
+  }
+  
+  
+  /* CURSO EJEMPLO/DETALLE*/
+  
+  
+  .course-image-detalle{
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+    padding: 1rem; 
+  }
+  
+  .recursos-container {
+    margin-bottom: 1.5rem; 
+    padding: 1rem;
+    padding-left: 2rem; 
+  }
+  
+  .recursos-list {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  .recursos-item {
+    margin-bottom: 1rem; 
+    display: flex; 
+    align-items: baseline; 
+  }
+  
+  .recursos-item strong {
+    color: black;
+    min-width: 150px; 
+    display: inline-block; 
+    margin-right: 1rem; 
+  }
+  
+  .recursos-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .recursos-link:hover {
+    text-decoration: underline; 
+  }
+  
+  .titulo-curso {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .titulo-curso:hover{
+    color: inherit;
+  
+  }
+
+  .contianer-perfil{
+    height: 24em;
+}
+
+.footer-contenedor{
+    display: flex;
+    position: relative;
+    top: 250px;
+}
+
+.container-detalles{
+    display: flex;
+    position: relative;
+    left: 100%;
+    bottom: 60%; 
+    font-size: 30px;
+    width: 120%;
+}
+
+.contenedor-titulo{
+    background-color: #001330;
+    color: white;
+}
+
+.table{
+    background-color: #001330;
+}
+
+.footer-contenedor{
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+
+.contenedor-Estudios{
+  display: flex;
+  background-color: #001330;
+}
