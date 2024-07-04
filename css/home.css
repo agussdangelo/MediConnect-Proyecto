@@ -153,9 +153,7 @@ main.container {
   .hero-content {
     display: flex;
     position: relative;
-<<<<<<< Updated upstream
-    top: 100px;
-=======
+ top: 100px;
     font-size: 16px;  
   }
 
@@ -163,7 +161,7 @@ main.container {
     margin: auto;
   }
 
-  }
+  
 
   @media only screen and (max-width: 1024px) {
     
@@ -291,7 +289,6 @@ main.container {
     position: relative;
     bottom: -20px;
   
->>>>>>> Stashed changes
   }
   .row{
     display: flex;
@@ -327,7 +324,6 @@ main.container {
 }
 @media only screen and (max-width: 425px) {
   
-<<<<<<< Updated upstream
   .hero-content h5{
     max-width: 75%;
   }
@@ -338,7 +334,6 @@ main.container {
     display: inline-block; 
   }
 
-=======
   .navbar{
     display: flex;
     width: max-content;
@@ -391,4 +386,3 @@ main.container {
 
 }
   }
->>>>>>> Stashed changes
