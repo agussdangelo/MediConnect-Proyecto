@@ -182,3 +182,163 @@ main.container {
   padding: 0.1em;
   display: inline-block;
 }
+
+
+
+@media only screen and (max-width: 1920px) {
+ 
+.hero-section{
+  height: 100vh;
+  width: 100%;
+}
+.hero-content {
+  display: flex;
+  position: relative;
+  font-size: 20px;  
+}
+
+}
+
+@media only screen and (max-width: 1440px) {
+  
+
+  .hero-background {
+    background-size: cover;
+    background-position: center;
+    height: 90%;
+  }
+
+  .hero-content {
+    display: flex;
+    position: relative;
+    font-size: 16px;  
+  }
+
+  .contenedor-titulo {
+    margin: auto;
+  }
+
+  }
+
+  @media only screen and (max-width: 1024px) {
+    
+    .container{
+     height: 105em;
+    }
+    
+    .hero-background {
+      background-size: cover;
+      background-position: center;
+      height: 60%;
+    }
+
+    .hero-content {
+      display: flex;
+      position: relative;
+      font-size: 11px;  
+    }
+
+    .contenedor-titulo {
+      margin: auto;
+      display: flex;
+      position: relative;
+      
+    }
+
+    .contenedor-servicios {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 250px;
+      height: 370px;
+      
+    }
+
+   .titulo-medic{
+    
+    justify-content: space-between;
+    position: relative;
+    bottom: 260px;
+   
+   }
+
+   .subtitlo-medic{
+    justify-content: space-between;
+    position: relative;
+    bottom: 260px;
+    
+   }
+
+   .row{
+     display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 250px;
+      height: 370px;
+      
+   }
+
+   .contenedor-boton{
+    position: relative;
+    bottom: 250px;
+   }
+
+   .footer-contenedor{
+    margin: auto;
+   }
+
+
+   @media only screen and (max-width: 768px) {
+    .hero-background {
+      background-size: cover;
+      background-position: center;
+      height: 50%;
+      
+    }
+
+    .hero-content {
+      display: flex;
+      position: relative;
+      
+      font-size: 8px;  
+    }
+
+
+    .menu {
+      display: none;
+    }
+
+    .contenedor-titulo {
+      margin: auto;
+      display: flex;
+      position: relative;
+      bottom: 120px;
+    }
+
+    .contenedor-servicios {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      bottom: 370px;
+      height: 340px;
+      
+     font-size: 14px;
+    }
+    
+    .card-body-otro{
+      
+    }
+
+    .titulo-medic{
+    
+      justify-content: space-between;
+      position: relative;
+      font-size: 50px;
+  
+  }
+  
+  }
+  }
+
+
+
