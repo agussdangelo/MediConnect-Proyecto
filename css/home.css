@@ -7,6 +7,17 @@
 
 /*Estilos del HEADER */
 
+
+.hover-slide {
+  transition: transform 0.3s ease;
+ 
+}
+
+header{
+  top: 0;
+  position: relative;
+}
+
 .navbar{
     background-color: #001330;
     font-size: 20px;
@@ -21,15 +32,19 @@
     margin: 10px;
     top: 0;
     display: flex;
+    align-items: center;
   }
 
   .navbar-nav{
     display: flex;
-    margin-right: 50%;
+    margin-right: auto;
   }
 
 .inicioSesion{
-  width: 5%;
+  display: flex;
+  padding-right: 12px;
+  margin-left: auto;
+  
 }
 
 .texto-fondo{
@@ -126,8 +141,12 @@ main.container {
 .contenedor-titulo{
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   margin-top: 25%;
 >>>>>>> 8f057fc5bbc4f640dc6cf6f028e3856b9e2496d8
+=======
+  margin-top: 2%;
+>>>>>>> 691f61816419f26437d0377caecdf1ed21992784
 }
 
 .footer-contenedor .footer-izquierda, .footer-contenedor .footer-center, .footer-contenedor .footer-derecha {
@@ -167,6 +186,7 @@ main.container {
   padding-left: 0.4em;
 }
 
+<<<<<<< HEAD
 .footer-contenedor .footer-derechos {
   color: #8f9296;
   font-size: 0.8em;
@@ -255,3 +275,247 @@ main.container {
 .footer-links a:hover {
   color: #3F71EA;
 }
+=======
+  .hero-background {
+    background-size: cover;
+    background-position: center;
+    height: 100%; 
+  }
+  
+  .hero-content {
+    display: flex;
+    position: relative;
+ top: 100px;
+    font-size: 16px;  
+  }
+
+  .contenedor-titulo {
+    margin: auto;
+  }
+
+  
+
+  @media only screen and (max-width: 1024px) {
+    
+    .container{
+     height: 105em;
+    }
+    
+    .hero-background {
+      background-size: cover;
+      background-position: center;
+      height: 60%;
+    }
+
+    .hero-content {
+      display: flex;
+      position: relative;
+      font-size: 11px;  
+    }
+
+    .contenedor-titulo {
+      margin: auto;
+      display: flex;
+      position: relative;
+    }
+
+    .contenedor-servicios {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 250px;
+      height: 370px;
+      
+    }
+
+   .titulo-medic{
+    
+    justify-content: space-between;
+    position: relative;
+    bottom: 260px;
+   
+   }
+
+   .subtitlo-medic{
+    justify-content: space-between;
+    position: relative;
+    bottom: 260px;
+    
+   }
+
+   .row{
+     display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 250px;
+      height: 370px;
+      
+   }
+
+   .contenedor-boton{
+    position: relative;
+    bottom: 250px;
+   }
+
+   .footer-contenedor{
+    margin: auto;
+   }
+
+
+   @media only screen and (max-width: 768px) {
+    
+    .container{
+      height: 115em;
+     }
+   
+    .hero-background {
+      background-size: cover;
+      background-position: center;
+      height: 50%;
+      
+    }
+
+    .hero-content {
+      display: flex;
+      position: relative;
+      
+      font-size: 8px;  
+    }
+
+
+    .menu {
+      display: none;
+    }
+
+    .contenedor-titulo {
+      margin: auto;
+      display: flex;
+      position: relative;
+      bottom: 400px;
+    }
+
+    .contenedor-servicios {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      bottom: 370px;
+      height: 340px;
+      
+     font-size: 14px;
+    }
+    
+    .card-body-otro{
+      
+    }
+
+    .titulo-medic{
+    
+      justify-content: space-between;
+      position: relative;
+      font-size: 50px;
+      bottom: -40px;
+  }
+
+  .subtitlo-medic{
+    justify-content: space-between;
+    position: relative;
+    bottom: -20px;
+  
+  }
+  .row{
+    display: flex;
+     justify-content: space-between;
+     position: relative;
+     bottom: -20px;
+    
+  }
+
+  .card{
+    width: 120%;
+    font-size: 15px;
+  }
+
+  .contenedor-boton{
+   position: relative;
+   bottom: -5px;
+  }  
+
+  .footer-center{
+    display: flex;
+    position: relative;
+    left: 200px;
+   }
+
+
+   .footer-acerca-de-compañia {
+    width: 50em;
+
+
+}
+
+}
+@media only screen and (max-width: 425px) {
+  
+  .hero-content h5{
+    max-width: 75%;
+  }
+  
+  .hero-content h1,
+  .hero-content h5 {
+    padding: 0.1em; 
+    display: inline-block; 
+  }
+
+  .navbar{
+    display: flex;
+    width: max-content;
+  }
+  
+  .hero-background {
+    background-position: left;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .hero-content {
+    display: flex;
+    position: relative;
+    
+  }
+
+.texto-fondo{
+  width: 60%;
+}
+
+
+  .parrafo-fondo{
+    font-size: 30px;
+  }
+  
+.boton-hero{
+  
+}
+
+  .contenedor-titulo {
+    margin: auto;
+    display: flex;
+    position: relative;
+    bottom: 30px;
+  }
+
+  .contenedor-servicios {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    bottom: 30px;
+    height: 340px;
+    
+   font-size: 14px;
+  }
+  
+  
+
+}
+  }
+>>>>>>> 691f61816419f26437d0377caecdf1ed21992784

@@ -1,51 +1,7 @@
-<<<<<<< HEAD
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Lexend Deca Variable', sans-serif;
-}
-
-/*Estilos del HEADER */
-
-.navbar{
-  background-color: #001330;
-  font-size: 20px;
-  
-}
-
-.nav-link{
-  color: white;
-}
-
-.container-menu{
-  margin: 10px;
-}
-
-.navbar-nav{
-  display: flex;
-  margin-right: 66%;
-  
-}
-
-.inicioSesion{
-display: flex;
-
-}
-
-.texto-fondo{
-font-size: 5em;
-width: 50%;
-}
-
-.parrafo-fondo{
-font-size: 2em;
-width: 40%;
-=======
 .menu-lateral{
     background: #363636;
     color: #007bff;
-    height: 29em;
+    height: 50em;
     
   }
   
@@ -63,6 +19,20 @@ width: 40%;
 background-color: #007bff;
 border: 1px solid  #007bff;
 padding: 5px;
+}
+
+.container-turno{
+    display: flex;
+    background-color: #001330;
+    color: white;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.turno-pendiente{
+    font-size: 15px;
 }
 
 .alert{
@@ -240,7 +210,28 @@ padding: 5px;
 
   .contianer-perfil{
     height: 24em;
->>>>>>> 691f61816419f26437d0377caecdf1ed21992784
 }
 
+.footer-contenedor{
+    display: flex;
+    position: relative;
+    top: 250px;
+}
 
+.container-detalles{
+    display: flex;
+    position: relative;
+    left: 100%;
+    bottom: 60%; 
+    font-size: 30px;
+    width: 120%;
+}
+
+.contenedor-titulo{
+    background-color: #001330;
+    color: white;
+}
+
+.table{
+    background-color: #001330;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediConnect</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/misEstudios.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/calendarStyle.css" />
+  <link rel="stylesheet" href="fontAwesome/css/fontawesome.css" />
+  <link href="fontAwesome/css/brands.css" rel="stylesheet" />
+  <link href="fontAwesome/css/solid.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="../img/Icono.png">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html" style="color: white;"><img src="../img/Isologo.png" alt="logo"
+            height="60"></a>
+        <a class="navbar-brand" href="../index.html" style="color: white;">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link btn btn-dark dropdown-toggle cursos-dropdown-toggle" href="./views/especialidades.html"
+                data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                Especialidades
+              </a>
+              <ul class="cursos-dropdown dropdown-menu mx-0 rounded-0 p-0">
+                <li class="hover-slide"><a class="dropdown-item" href="#">Alergología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Antestología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Cardiología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Dermatología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Endocrinología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Gastroenterología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Geriatria</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Hematología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Infectología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Nefrología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Neumología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Neurología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Nutriología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Obstetricia</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Oftalmología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Oncología</a></li>
+                <li class="hover-slide"><a class="dropdown-item" href="#">Ortopedia</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link btn btn-dark dropdown-toggle modalidades-dropdown-toggle" data-bs-toggle="dropdown"
+                  href="./views/centrosMedicos" aria-expanded="false" style="color: white;">
+                  Centros Médicos
+                </a>
+                <ul class="modalidades-dropdown dropdown-menu mx-0 rounded-0 p-0">
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Palermo</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Mitre</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Quilmes</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad San Isidro</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad San Isidro
+                      Fleming</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Ramos Mejia</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Barrio Norte</a></li>
+                  <li class="hover-slide"><a class="dropdown-item" href="#">Centro Médico Trinidad Dupuytren</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <a href="./views/login.html"><button type="button" class="btn btn-light"
+              style="text-decoration:#001330; display: none;">Iniciar Sesión</button></a>
+          <a href="./views/turno.html"><button type="button" class="btn btn-light"
+              style="text-decoration:#001330;">Solicitar un turno</button></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="contianer-perfil">
+    <div class="container-fluid" style="min-height: 83vh;">
+      <div class="row" style="min-height: 83vh;">
+        <!-- Menú lateral -->
+        <div class="col-lg-2 menu-lateral">
+          <nav class="sidebar">
+            <div class="d-flex flex-column">
+              <a class="nav-link" href="misTurnos.html"><i class="fa fa-calendar fa-lg"></i> Mis Turnos</a>
+              <li class="turno-pendiente"><b>Cardiología</b></li>
+                <li class="turno-pendiente"><b>Dermatología</b></li>
+              <a class="nav-link" href="misEstudios.html"><i class="fa fa-stethoscope fa-lg"></i> Mis Estudios</a>
+              <a class="nav-link  categoria-seleccionada" href="profile.html"><i class="fa fa-user fa-lg"></i> Mi
+                perfil</a>
+                
+              <a class="nav-link" href="estadisticas.html"><i class="fa fa-bar-chart fa-lg"></i> Estadisticas</a>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-10 p-4">
+            <h1 class="mb-3">Mis Estudios</h1>
+
+            <!-- Tabla de pagos -->
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <div class="contenedor-Estudios">
+                    <th scope="col">Estudio</th>
+                    <th scope="col">Especialidad</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col"></th>
+                </div>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Electrocardiograma</th>
+                    <td>Cardiologia</td>
+                    <td>12/12/2023</td>
+                    <td>En Proceso</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Analisis</th>
+                    <td>Laboratorio</td>
+                    <td>25/11/2023</td>
+                    <td>Completo</td>
+                    <td class="w-25"><a class="btn boton-pagar w-80" style="background-color:#0069d9; color:white;" href="#" download="factura.pdf">Descargar estudio <i class="fa fa-file-pdf fa-lg ml-2"></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Radiografia</th>
+                    <td>Dermatología</td>
+                    <td>2/2/2024</td>
+                    <td>Completo</td>
+                    <td class="w-25"><a class="btn boton-pagar w-80" style="background-color: #0069d9; color:white;" href="#" download="factura.pdf">Descargar estudio <i class="fa fa-file-pdf fa-lg ml-2"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+  </main>
+
+  <!-- Detalles -->
+
+
+  <footer class="footer-contenedor">
+    <div class="footer-izquierda">
+      <h3>Consultorios <span>MediConnect</span></h3>
+      <p class="footer-links"> Integrantes: </p>
+      <div class="integrantes">
+        <p>Agustin Dangelo, Angel Leyes, Santiago Piedrafita, Tobias Rodriguez, Ian Alimonta</p>
+      </div>
+      <p class="footer-derechos">Copyright © 2024 <strong>MediConnect</strong>
+        Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-center">
+      <p class="contacto">CONTACTO</p>
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>San Justo, La Matanza</span>
+          Argentina</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+54 11 6123-4567</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:mediconnect@gmail.com">mediconnect@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="footer-derecha">
+      <p class="footer-acerca-de-compañia">
+        <span>Acerca de la Clínica</span>
+        <strong>En MediConnect, nos dedicamos a brindar atención médica de calidad y personalizada para todas las
+          necesidades de salud de nuestra comunidad. Fundada en 1994, nuestra clínica se ha
+          establecido como un referente en el cuidado integral del paciente, combinando tecnología de
+          vanguardia con un equipo de profesionales altamente calificados.</strong>
+      </p>
+
+      <p class="materia">Visualizacion e Interfaces - 2024 | UNLAM</p>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+
+<!-- Bootstrap JS and dependencies -->
+
+<script src="js/home.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var cursosDropdown = $(".cursos-dropdown");
+    var cursosTitle = $(".cursos-dropdown-toggle");
+
+    var modalidadesDropdown = $(".modalidades-dropdown");
+    var modalidadesTitle = $(".modalidades-dropdown-toggle");
+
+    cursosDropdown.hide();
+    modalidadesDropdown.hide();
+
+    // CURSOS Dropdown
+    cursosTitle.mouseenter(function () {
+      cursosDropdown.show();
+      modalidadesDropdown.hide();
+    });
+
+    $(".navbar").mouseleave(function () {
+      cursosDropdown.hide();
+    });
+
+    cursosDropdown.mouseenter(function () {
+      cursosDropdown.show();
+      modalidadesDropdown.hide();
+    }).mouseleave(function () {
+      cursosDropdown.hide();
+    });
+
+    // MODALIDADES Dropdown
+    modalidadesTitle.mouseenter(function () {
+      modalidadesDropdown.show();
+      cursosDropdown.hide();
+    });
+
+    $(".navbar").mouseleave(function () {
+      modalidadesDropdown.hide();
+    });
+
+    modalidadesDropdown.mouseenter(function () {
+      modalidadesDropdown.show();
+      cursosDropdown.hide();
+    }).mouseleave(function () {
+      modalidadesDropdown.hide();
+    });
+
+    // Hover slide effect
+    $(".hover-slide").mouseenter(function () {
+      $(this).css("transform", "translateX(10px)");
+    }).mouseleave(function () {
+      $(this).css("transform", "translateX(0)");
+    });
+  });
+</script>
+</body>
+
+</html>
