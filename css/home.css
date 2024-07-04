@@ -1,15 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lexend Deca Variable', sans-serif;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-/*Estilos del HEADER */
+/* Estilos del HEADER */
 
 .inicioSesion {
   margin-left: auto; /* Empuja el botón hacia la derecha */
@@ -17,17 +17,17 @@ body{
 }
 
 .inicioSesion button {
-  text-decoration: #001330; /* No es una propiedad válida para text-decoration */
+  text-decoration: none; /* Corregido, text-decoration no admite color */
   margin-right: 10px;
 }
 
-.encabezado{
+.encabezado {
   top: 0;
   width: 100%;
-  padding: 0 0;
+  padding: 0;
 }
 
-.navbar{
+.navbar {
   background-color: #001330;
   font-size: 20px;
   top: 0;
@@ -55,7 +55,7 @@ body{
   width: 55%;
 }
 
-.texto-fondo strong{
+.texto-fondo strong {
   color: #0076d4;
 }
 
@@ -65,7 +65,7 @@ body{
   margin-top: 1em;
 }
 
-/*Estilos MAIN y SECCION IMAGEN */
+/* Estilos MAIN y SECCION IMAGEN */
 
 .text-center {
   margin-top: 0.1em;
@@ -77,9 +77,7 @@ body{
 
 main.container {
   padding: 0;
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   max-width: 100%;
 }
 
@@ -90,39 +88,32 @@ main.container {
 
 .card {
   width: 70%;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin: 1.5em;
   transition: transform 0.7s;
   padding-bottom: 0.7em;
 }
 
-.card-servicio{
-  width: 70%;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+.card-servicio {
+  width: 60%;
+  margin: 1.5em;
   transition: transform 0.7s;
   padding-bottom: 0.7em;
 }
-  
-.card-servicio:hover{
+
+.card-servicio:hover {
   transform: scale(1.1);
   transition: 0.4s;
   background-color: #001330;
   color: #fff;
 }
 
-.card-body{
+.card-body {
   height: 10em;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.1);
   color: #0076d4;
-}
-  
-.card-body i{
-  margin-top: 0.1em;
-  text-align: center;
 }
 
 .card-body i {
@@ -164,17 +155,13 @@ main.container {
 .contenedor-servicios {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-left: 8%;
-  margin-right: 8%;
-  margin-bottom: 50px;
+  margin: 50px 8%;
 }
 
 .hero-section {
   position: relative;
   width: 100%;
   height: 100%;
-
 }
 
 .hero-background {
@@ -186,11 +173,12 @@ main.container {
 
 .hero-content {
   display: flex;
+  flex-direction: column;
   position: relative;
-  top: 0em; 
+  top: 0;
 }
 
-.hero-content .texto-fondo{
+.hero-content .texto-fondo {
   max-width: 100%;
 }
 
@@ -204,158 +192,116 @@ main.container {
   display: inline-block;
 }
 
-@media only screen and (max-width: 1920px) {
-.hero-section{
-  height: 100vh;
-  width: 100%;
-}
-.hero-content {
-  display: flex;
-  position: relative;
-  font-size: 20px;  
-}
+/* Media Queries */
 
+@media only screen and (max-width: 1920px) {
+  .hero-section {
+    height: 100vh;
+  }
+  .hero-content {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 1440px) {
-  
-
   .hero-background {
-    background-size: cover;
-    background-position: center;
     height: 90%;
   }
-
   .hero-content {
-    display: flex;
-    position: relative;
-    font-size: 16px;  
+    font-size: 16px;
   }
-
   .contenedor-titulo {
     margin: auto;
   }
+}
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    height: 105em;
   }
-
-  @media only screen and (max-width: 1024px) {
-    
-    .container{
-      height: 105em;
-    }
-    
-    .hero-background {
-      background-size: cover;
-      background-position: center;
-      height: 60%;
-    }
-
-    .hero-content {
-      display: flex;
-      position: relative;
-      font-size: 11px;  
-    }
-
-    .contenedor-titulo {
-      margin: auto;
-      display: flex;
-      position: relative;
-      
-    }
-
-    .contenedor-servicios {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      bottom: 250px;
-      height: 370px;
-      
-    }
-
-    .titulo-medic{
-    
-    justify-content: space-between;
-    position: relative;
-    bottom: 260px;
-
-    }
-
-    .subtitlo-medic{
-    justify-content: space-between;
-    position: relative;
-    bottom: 260px;
-    
-    }
-
-    .row{
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      bottom: 250px;
-      height: 370px;
-      
-    }
-
-    .contenedor-boton{
+  .hero-background {
+    height: 60%;
+  }
+  .hero-content {
+    font-size: 11px;
+  }
+  .contenedor-titulo {
+    margin: auto;
+  }
+  .contenedor-servicios {
+    flex-direction: column;
     position: relative;
     bottom: 250px;
-    }
-
-    .footer-contenedor{
+    height: auto;
+  }
+  .titulo-medic {
+    bottom: 260px;
+  }
+  .subtitulo-medic {
+    bottom: 260px;
+  }
+  .row {
+    bottom: 250px;
+    height: auto;
+  }
+  .contenedor-boton {
+    bottom: 250px;
+  }
+  .footer-contenedor {
     margin: auto;
-    }
-
-
-    @media only screen and (max-width: 768px) {
-    .hero-background {
-      background-size: cover;
-      background-position: center;
-      height: 50%;
-      
-    }
-
-    .hero-content {
-      display: flex;
-      position: relative;
-      
-      font-size: 8px;  
-    }
-
-
-    .menu {
-      display: none;
-    }
-
-    .contenedor-titulo {
-      margin: auto;
-      display: flex;
-      position: relative;
-      bottom: 120px;
-    }
-
-    .contenedor-servicios {
-      display: flex;
-      position: relative;
-      flex-wrap: wrap;
-      bottom: 370px;
-      height: 340px;
-      font-size: 14px;
-    }
-    
-    .card-body-otro{
-      
-    }
-
-    .titulo-medic{
-    
-      justify-content: space-between;
-      position: relative;
-      font-size: 50px;
-  
   }
-  
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-contenedor{
+    display: none;
   }
+  .hero-background {
+    height: 70%;
   }
+  .hero-content {
+    font-size: 8px;
+  }
+  .menu {
+    display: none;
+  }
+  .contenedor-titulo {
+    top: 0;
+  }
+  .contenedor-servicios {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    height: 100%;
+    font-size: 14px;
+  }
+  .card-servicio {
+    width: 80%;
+    margin-top: 5%;
+  }
+  #primeraTarjeta{
+    margin-top: 100%;
+  }
+  .text-center{
+    margin-top: 22%;
+  }
+  .titulo-medic {
+    font-size: 2.5em;
+  }
+  .titulo-medic-servicio {
+    font-size: 2.5em;
+    margin-top: -1em;
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5em;
+  }
+  .card-body i{
+    font-size: 0.9em;
+  }
+}
 
 
 
