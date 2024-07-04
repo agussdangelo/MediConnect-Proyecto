@@ -131,7 +131,7 @@ function renderCards(especialidades) {
         <div class="card-body">
           <h5 class="card-title">${especialidad.nombre}</h5>
           <p class="card-text">${especialidad.descripcion}</p>
-          <a href="#" class="btn btn-primary" style="width: 200px; background-color: #001330;">Más información</a>
+          <a href="./especialidad.html" class="btn btn-primary" style="width: 200px; background-color: #001330;">Más información</a>
         </div>
       </div>
     </div>
