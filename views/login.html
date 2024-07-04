@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../img/Icono.png">
+  <title>Login - Mediconnect</title>
+</head>
+<body>
+  <main class="main">
+    <section class="card">
+      <h2>Accede a tu cuenta</h2>
+      <form class="login-form" action="../views/profile.html" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Ingresá tu email" />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Ingresá tu contraseña" />
+        <button type="submit">Ingresar</button>
+      </form>
+      <div class="register">
+        <p>No tienes una cuenta?</p>
+        <a href="./register.html" class="button">Regístrate aquí</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+

@@ -1,53 +1,360 @@
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Lexend Deca Variable', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca Variable', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 /*Estilos del HEADER */
 
-.navbar{
-    background-color: #0075fc;
-  }
-
-.container-menu{
-    margin-left: 10px;
+.inicioSesion {
+  margin-left: auto; /* Empuja el botón hacia la derecha */
+  padding-left: 10px; /* Espacio entre los elementos */
 }
 
+.inicioSesion button {
+  text-decoration: #001330; /* No es una propiedad válida para text-decoration */
+  margin-right: 10px;
+}
+
+.encabezado{
+  top: 0;
+  width: 100%;
+  padding: 0 0;
+}
+
+.navbar{
+  background-color: #001330;
+  font-size: 20px;
+  top: 0;
+}
+
+.container-menu {
+  margin: 10px;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.inicioSesion {
+  display: flex;
+  padding-right: 12px;
+  margin-left: auto;
+}
+
+.texto-fondo {
+  font-size: 4.9em;
+  width: 55%;
+}
+
+.texto-fondo strong{
+  color: #0076d4;
+}
+
+.parrafo-fondo {
+  font-size: 2em;
+  width: 40%;
+  margin-top: 1em;
+}
+
+/*Estilos MAIN y SECCION IMAGEN */
+
+.text-center {
+  margin-top: 0.1em;
+}
+
+.text-center h5 {
+  margin-bottom: 1em;
+}
 
 main.container {
-    padding: 0;
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 100%;
-  }
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 70%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  transition: transform 0.2s;
+  padding-bottom: 0.7em;
+}
+
+.card-servicio{
+  width: 70%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  transition: transform 0.7s;
+  padding-bottom: 0.7em;
+}
+  
+.card-servicio:hover{
+  transform: scale(1.1);
+  background-color: #001330;
+  color: #fff;
+}
+
+.card-body{
+  height: 10em;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  color: #0076d4;
+}
+  
+.card-body i{
+  margin-top: 0.1em;
+  text-align: center;
+}
+
+.card-body i {
+  margin-top: 0.1em;
+  text-align: center;
+}
+
+.card-body-otro {
+  height: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contenedor-boton {
+  margin-top: 40px;
+}
+
+.contenedor-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.titulo-medic {
+  font-size: 4em;
+}
+
+.titulo-medic-servicio {
+  font-size: 4em;
+  margin-top: 10%;
+}
+
+.contenedor-info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.contenedor-servicios {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 50px;
+}
 
 .hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Establece la altura al 100% de la ventana gráfica (viewport height) */
-  }
+  position: relative;
+  width: 100%;
+  height: 100%;
 
+}
+
+.hero-background {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: absolute;
+}
+
+.hero-content {
+  display: flex;
+  position: relative;
+  top: 0em; 
+}
+
+.hero-content .texto-fondo{
+  max-width: 100%;
+}
+
+.hero-content .parrafo-fondo {
+  max-width: 100%;
+}
+
+.hero-content h1,
+.hero-content h5 {
+  padding: 0.1em;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1920px) {
+.hero-section{
+  height: 100vh;
+  width: 100%;
+}
+.hero-content {
+  display: flex;
+  position: relative;
+  font-size: 20px;  
+}
+
+}
+
+@media only screen and (max-width: 1440px) {
+  
 
   .hero-background {
     background-size: cover;
     background-position: center;
-    height: 100%; /* Ajusta la altura al 100% */
+    height: 90%;
   }
-  
+
   .hero-content {
-    max-width: 40%; /* Establece un ancho máximo para mantener la legibilidad */
+    display: flex;
+    position: relative;
+    font-size: 16px;  
   }
-  
-  .hero-content h5{
-    max-width: 75%;
+
+  .contenedor-titulo {
+    margin: auto;
   }
-  
-  .hero-content h1,
-  .hero-content h5 {
+
+  }
+
+  @media only screen and (max-width: 1024px) {
     
-    padding: 0.1em; /* Ajusta según sea necesario */
-    display: inline-block; /* Para que el fondo abarque solo el contenido del texto */
+    .container{
+      height: 105em;
+    }
+    
+    .hero-background {
+      background-size: cover;
+      background-position: center;
+      height: 60%;
+    }
+
+    .hero-content {
+      display: flex;
+      position: relative;
+      font-size: 11px;  
+    }
+
+    .contenedor-titulo {
+      margin: auto;
+      display: flex;
+      position: relative;
+      
+    }
+
+    .contenedor-servicios {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 250px;
+      height: 370px;
+      
+    }
+
+    .titulo-medic{
+    
+    justify-content: space-between;
+    position: relative;
+    bottom: 260px;
+
+    }
+
+    .subtitlo-medic{
+    justify-content: space-between;
+    position: relative;
+    bottom: 260px;
+    
+    }
+
+    .row{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 250px;
+      height: 370px;
+      
+    }
+
+    .contenedor-boton{
+    position: relative;
+    bottom: 250px;
+    }
+
+    .footer-contenedor{
+    margin: auto;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+    .hero-background {
+      background-size: cover;
+      background-position: center;
+      height: 50%;
+      
+    }
+
+    .hero-content {
+      display: flex;
+      position: relative;
+      
+      font-size: 8px;  
+    }
+
+
+    .menu {
+      display: none;
+    }
+
+    .contenedor-titulo {
+      margin: auto;
+      display: flex;
+      position: relative;
+      bottom: 120px;
+    }
+
+    .contenedor-servicios {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      bottom: 370px;
+      height: 340px;
+      font-size: 14px;
+    }
+    
+    .card-body-otro{
+      
+    }
+
+    .titulo-medic{
+    
+      justify-content: space-between;
+      position: relative;
+      font-size: 50px;
+  
   }
+  
+  }
+  }
+
+
+
