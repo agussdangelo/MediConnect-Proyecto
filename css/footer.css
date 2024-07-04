@@ -3,10 +3,12 @@ footer {
     bottom: 0;
 }
 
-@media (max-height:768px) {
-    footer{
-        position: static;
-        bottom: 0;
+@media (max-width:900px) {
+    .card-body{
+        position: relative;
+    }
+    .footer-contenedor {
+        display: none;
     }
     header {
         padding-top: 40px;
@@ -20,7 +22,7 @@ footer {
     text-align: left;
     font: bold 1em sans-serif;
     padding: 3.1em 3.1em 3.7em 3.1em;
-    margin-top: 5em;
+   
 }
 
 .footer-contenedor .footer-izquierda, .footer-contenedor .footer-center, .footer-contenedor .footer-derecha {

@@ -9,7 +9,7 @@ body {
 .main {
   padding: 0;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(2, 0, 36);
   background: radial-gradient(
     circle,
@@ -20,24 +20,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .card {
-  width: 35%;
-  height: 70%;
+  width: 90%;
+  max-width: 500px;
   background-color: white;
   border-radius: 10px;
-  padding-left: 125px;
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .card h2 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-align: center;
-  max-width: 75%;
 }
 
 .login-form {
@@ -47,25 +46,26 @@ body {
 
 .form {
   display: flex;
-  max-width: 75%;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  flex: 1;
+  min-width: 45%;
 }
 
 .column label,
 .column select,
 .column input {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .column input,
 .column select {
-  padding: 1em;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #f9f9f9;
@@ -82,7 +82,7 @@ body {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
-  max-width: 75%;
+  width: 100%;
   margin-top: 15px;
 }
 
@@ -98,8 +98,8 @@ body {
   align-items: center;
   gap: 20px;
   color: #98a2b3;
-  max-width: 75%;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 label[for="terminos"] {
@@ -117,11 +117,11 @@ input[type="checkbox"] {
   align-items: center;
   gap: 20px;
   color: #98a2b3;
-  max-width: 75%;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.login button {
+.login a {
   background: none;
   color: #1877f2;
   border: none;
@@ -131,6 +131,46 @@ input[type="checkbox"] {
   font-weight: bold;
 }
 
-.login button:hover {
+.login a:hover {
   text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+    padding: 15px;
+    margin: 25px;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .register,
+  .login {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .column label,
+  .column select,
+  .column input {
+    margin-bottom: 10px;
+  }
+
+  .login-form button {
+    padding: 10px;
+  }
 }
