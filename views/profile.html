@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediConnect</title>
     <!-- Bootstrap CSS -->
-    
-    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/calendarStyle.css" />
-    <link rel="stylesheet" href="fontAwesome/css/fontawesome.css" />
-    <link href="fontAwesome/css/brands.css" rel="stylesheet" />
-    <link href="fontAwesome/css/solid.css" rel="stylesheet" />
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
@@ -26,9 +22,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html" style="color: white;"><img src="../img/Isologo.png" alt="logo" height="60"></a>
-              <div class="homeBtn">
               <a class="navbar-brand" href="../index.html" style="color: white;">Home</a>
-            </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
                 aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -92,90 +86,106 @@
             </div>
           </nav>
     </header>
-    <main class="contianer-perfil">
-      <div class="container-fluid" style="min-height: 83vh;">
-        <div class="row" style="min-height: 83vh;">
-          <!-- Menú lateral -->
-          <div class="col-lg-2 menu-lateral">
-            <nav class="sidebar">
-              <div class="d-flex flex-column">
-                <a class="nav-link" href="misTurnos.html"><i class="fa fa-calendar fa-lg"></i> Mis Turnos</a>
-                <a class="nav-link" href="misEstudios.html"><i class="fa fa-stethoscope fa-lg"></i> Mis Estudios</a>
-                <a class="nav-link  categoria-seleccionada" href="profile.html"><i class="fa fa-user fa-lg"></i> Mi perfil</a>
-                <a class="nav-link" href="estadisticas.html"><i class="fa fa-bar-chart fa-lg"></i> Estadisticas</a
-                >
-              </div>
-            </nav>
-          </div>
-          <div class="col-lg-10 p-4">
-            <h1 class="mb-3 me-5 texto-perfil">Mi perfil</h1>
-
-            <!-- Datos perfil -->
-            <div class="row">
-                <div class="col-6 col-md-6 col-lg-2 perfil-contenedor">
-                    <img src="../img/logoUser.png" alt="perfil-placeholder" class="avatar img-fluid">
-                    <button class="btn boton-pagar w-100 mt-2">CAMBIAR</button>
-                </div>
-                <div class="col-6 col-md-6 col-lg-8 perfil-contenedor">
-                    <h4>NOMBRE, APELLIDO</h4>
-                    <h5>DNI</h5>
-                    <input type="text" class="mt-4 w-100" placeholder="E-mail">
-                    <input type="text" class="mt-2 w-100" placeholder="Teléfono">
-                    <p class="mt-2">Cambiar contraseña</p>
+    <main class="">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Card for User Profile -->
+                <div class="card">
+                    <img src="../img/logoUser.png" class="card-img-top" alt="Profile Picture">
+                    <div class="card-body text-center">
+                     
+                        <h5 class="card-title">Nombre, Apellido</h5>
+                        <p class="card-text">Descripción breve del usuario. Puede incluir detalles como la ocupación, intereses, etc.</p>
+                        
+                    </div>
                 </div>
             </div>
-            
-
-            <!-- Tabla de cursos activos -->
-          
-
-          </div>
-
-
+            <div class="col-md-8">
+                <!-- User Details -->
+                <div class="card">
+                    <div class="card-header">
+                        Informacion del perfil
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Detalles del Perfil</h5>
+                        <p class="card-text"></p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Correo Electrónico:</strong> usuario@example.com</li>
+                            <li class="list-group-item"><strong>Teléfono:</strong> +123 456 7890</li>
+                            <li class="list-group-item"><strong>Ubicación:</strong> Ciudad, País</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Recent Activities or Posts -->
+                <div class="card mt-4">
+                    <div class="card-header">
+                        Mis Turnos
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Turno 1</a>
+                            <a href="#" class="list-group-item list-group-item-action">Turno 2</a>
+                            <a href="#" class="list-group-item list-group-item-action">Turno 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-header">
+                        Mis Estudios
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Estudio 1</a>
+                            <a href="#" class="list-group-item list-group-item-action">Estudio 2</a>
+                            <a href="#" class="list-group-item list-group-item-action">Estudio 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
+    </div>
+    
 </main>
-<footer class="footer-contenedor">
-  <div class="footer-izquierda">
-      <h3>Consultorios <span>MediConnect</span></h3>
-      <p class="footer-links"> Integrantes: </p>
-      <div class="integrantes">
-          <p>Agustin Dangelo, Angel Leyes, Santiago Piedrafita, Tobias Rodriguez, Ian Alimonta</p>
-      </div>
-      <p class="footer-derechos">Copyright © 2024 <strong>MediConnect</strong>
-      Todos los derechos reservados.</p>
-  </div>
-
-  <div class="footer-center">
-    <p class="contacto">CONTACTO</p>
-    <div>
-      <i class="fa fa-map-marker"></i>
-      <p><span>San Justo, La Matanza</span>
-        Argentina</p>
-    </div>
-    <div>
-      <i class="fa fa-phone"></i>
-      <p>+54 11 6123-4567</p>
-    </div>
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="mailto:mediconnect@gmail.com">mediconnect@gmail.com</a></p>
-    </div>
-  </div>
-
-  <div class="footer-derecha">
-    <p class="footer-acerca-de-compañia">
-      <span>Acerca de la Clínica</span>
-      <strong>En MediConnect, nos dedicamos a brindar atención médica de calidad y personalizada para todas las
-        necesidades de salud de nuestra comunidad. Fundada en 1994, nuestra clínica se ha
-        establecido como un referente en el cuidado integral del paciente, combinando tecnología de
-        vanguardia con un equipo de profesionales altamente calificados.</strong>
-    </p>
-
-    <p class="materia">Visualización e Interfaces - 2024 | UNLAM</p>
-  </div>
-</footer>
+    <footer class="footer-contenedor">
+        <div class="footer-izquierda">
+          <h3>Consultorios <span>MediConnect</span></h3>
+          <p class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Perfil</a>
+            <a href="#">Personal Medico</a>
+          </p>
+    
+          <p class="footer-derechos">Copyright © 2024 <strong>MediConnect</strong>
+            Todos los derechos reservados.</p>
+        </div>
+    
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>San Justo, La Matanza</span>
+              Argentina</p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+54 11 6123-4567</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#">mediconnect@gmail.com</a></p>
+          </div>
+        </div>
+    
+        <div class="footer-derecha">
+          <p class="footer-acerca-de-compañia">
+            <span>Acerca de la Clínica</span>
+            <strong>En MediConnect, nos dedicamos a brindar atención médica de calidad y personalizada para todas las
+              necesidades de salud de nuestra comunidad. Fundada en 1994, nuestra clínica se ha
+              establecido como un referente en el cuidado integral del paciente, combinando tecnología de
+              vanguardia con un equipo de profesionales altamente calificados.</strong>
+          </p>
+        </div>
+      </footer>
     
 
     <!-- Bootstrap JS and dependencies -->
