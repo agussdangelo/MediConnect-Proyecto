@@ -24,26 +24,28 @@ body {
 
 .card {
   width: 35%;
-  height: 50%;
+  max-width: 500px;
+  min-width: 300px;
+  height: auto;
   background-color: white;
   border-radius: 10px;
-  padding-left: 125px;
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding: 50px 25px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .card h2 {
   margin-bottom: 50px;
   text-align: center;
-  max-width: 75%;
+  width: 100%;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
-  max-width: 75%;
+  width: 100%;
   gap: 10px;
 }
 
@@ -62,10 +64,9 @@ body {
   color: white;
   border-radius: 4px;
   padding: 15px;
-  border-color: none;
+  border: none;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  border: 1px solid #1877f2;
   cursor: pointer;
 }
 
@@ -80,20 +81,79 @@ body {
   align-items: center;
   gap: 20px;
   color: #98a2b3;
-  max-width: 75%;
+  width: 100%;
   justify-content: space-between;
 }
 
-.register button {
-  background: none;
+.register a {
   color: #1877f2;
-  border: none;
-  cursor: pointer;
-  text-align: center;
+  text-decoration: none;
   font-size: 16px;
   font-weight: bold;
 }
 
-.register button:hover {
+.register a:hover {
   text-decoration: underline;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+    padding: 30px 15px;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .login-form input {
+    font-size: 0.9rem;
+  }
+
+  .login-form button {
+    padding: 12px;
+  }
+
+  .register {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .register p,
+  .register a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding-top: 30px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 20px 10px;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .login-form input {
+    font-size: 0.8rem;
+  }
+
+  .login-form button {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .register p,
+  .register a {
+    font-size: 0.8rem;
+  }
 }
