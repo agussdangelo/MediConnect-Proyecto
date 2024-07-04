@@ -1,13 +1,13 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lexend Deca Variable', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca Variable', sans-serif;
 }
 
-/* body{
+body{
   overflow-x: hidden;
-} */
+}
 
 /*Estilos del HEADER */
 
@@ -28,10 +28,10 @@
 }
 
 .navbar{
-    background-color: #001330;
-    font-size: 20px;
-    top: 0;
-  }
+  background-color: #001330;
+  font-size: 20px;
+  top: 0;
+}
 
 .container-menu {
   margin: 10px;
@@ -88,20 +88,27 @@ main.container {
   justify-content: center;
 }
 
-  .card {
-    width: 70%;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
+.card {
+  width: 70%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  transition: transform 0.2s;
+  padding-bottom: 0.7em;
+}
   
-  .card-body{
-    height: 10em;
-  }
+.card-body{
+  height: 10em;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  color: #0076d4;
+}
   
-  .card-body i{
-    margin-top: 0.1em;
-    text-align: center;
-  }
+.card-body i{
+  margin-top: 0.1em;
+  text-align: center;
+}
 
 .card-body i {
   margin-top: 0.1em;
@@ -159,11 +166,15 @@ main.container {
 .hero-content {
   display: flex;
   position: relative;
-  top: 1em;
+  top: 0em; 
 }
 
-.hero-content h5 {
-  max-width: 75%;
+.hero-content .texto-fondo{
+  max-width: 100%;
+}
+
+.hero-content .parrafo-fondo {
+  max-width: 100%;
 }
 
 .hero-content h1,
