@@ -240,6 +240,9 @@ main.container {
   .subtitulo-medic {
     bottom: 260px;
   }
+  .card-servicio {
+   
+  }
   .row {
     bottom: 250px;
     height: auto;
@@ -285,6 +288,7 @@ main.container {
   }
 }
 @media only screen and (max-width: 480px) {
+ 
   .footer-contenedor{
     display: none;
   }
@@ -298,15 +302,18 @@ main.container {
     display: none;
   }
   .contenedor-titulo {
-    margin-top: 15em;
-    margin-bottom: -50%;
+    display: flex;
+    position: relative;
+    bottom: 220px;
+    
     text-align: center;
   }
   .contenedor-servicios {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10%;
+    position: relative;
+    bottom: 220px;
     height: 100%;
     font-size: 14px;
   }
@@ -317,7 +324,9 @@ main.container {
     margin-top: 150%;
   }
   .text-center{
-    margin-top: 75%;
+    flex-direction: column;
+    position: relative;
+    bottom: 90px;
   }
   .titulo-medic {
     font-size: 2.5em;
@@ -334,7 +343,43 @@ main.container {
   .card-body i{
     font-size: 0.9em;
   }
+
+  @media only screen and (max-width: 425px) {
+    .footer-contenedor{
+      display: none;
+    }
+    .texto-fondo{
+      font-size: 25px;
+      
+    }
+  
+  }
 }
 
+  @media only screen and (max-width: 375px) {
+    .footer-contenedor{
+      display: none;
+    }
+    .texto-fondo{
+      font-size: 20px;
+      
+    }
+  
+    @media only screen and (max-width:320px) {
+    
+      .footer-contenedor{
+        display: none;
+      }
+      .texto-fondo{
+        font-size: 25px;
+        height: 50px;
+        
+      }
+    
+      .parrafo-fondo{
+        color: transparent;
+      }
+    }
 
+  }
 
