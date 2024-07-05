@@ -3,9 +3,12 @@ footer {
     bottom: 0;
 }
 
-@media (max-height:800px) {
-    footer {
-        position: static;
+@media (max-width:900px) {
+    .card-body{
+        position: relative;
+    }
+    .footer-contenedor {
+        display: none;
     }
     header {
         padding-top: 40px;
@@ -19,7 +22,6 @@ footer {
     text-align: left;
     font: bold 1em sans-serif;
     padding: 3.1em 3.1em 3.7em 3.1em;
-    margin-top: 5em;
 }
 
 .footer-contenedor .footer-izquierda, .footer-contenedor .footer-center, .footer-contenedor .footer-derecha {
@@ -30,7 +32,12 @@ footer {
 /* La parte izquierda del footer */
 
 .footer-contenedor .footer-izquierda {
-    width: 30%;
+    width: 32%;
+}
+
+.footer-contenedor .footer-izquierda .integrantes{
+    color: #857f7f;
+    text-align: justify;
 }
 
 .footer-contenedor h3 {
@@ -46,17 +53,15 @@ footer {
 
 /* La parte de links del footer */
 
-.footer-contenedor .footer-links {
-    color: #ffffff;
-    margin: 1.2em 0 0.7em;
+.footer-links a{
+    width: 100%;
+    height: 100%;
+    margin-left: 1em;
 }
 
-.footer-contenedor .footer-links a {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-    padding-left: 0.4em;
+.footer-contenedor .footer-links {
+    color: #ffffff;
+    margin: 1em 0 1em;
 }
 
 .footer-contenedor .footer-derechos {
@@ -66,11 +71,27 @@ footer {
     margin: 0;
 }
 
+.integrantes a:hover {
+    color: #3F71EA;
+}
+
 /* La parte central del footer*/
 
+.footer-contenedor .footer-center .contacto{
+    color: #1aabee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
 .footer-contenedor .footer-center {
-    width: 35%;
+    width: 30%;
     padding-left: 2em;
+    margin-right: 3em;
 }
 
 .footer-contenedor .footer-center i {
@@ -126,6 +147,13 @@ footer {
     width: 30%;
 }
 
+.footer-contenedor .footer-derecha .materia{
+    margin-top: 3.3em;
+    width: 100%;
+    color: #857f7f;
+    text-align: right;
+}
+
 .footer-contenedor .footer-acerca-de-compañia {
     line-height: 1.3em;
     color: #92999f;
@@ -144,6 +172,3 @@ footer {
     margin-bottom: 1.25em;
 }
 
-.footer-links a:hover {
-    color: #3F71EA;
-}
