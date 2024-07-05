@@ -424,7 +424,9 @@
   }
   .texto-fondo {
     font-size: 3em;
-
+  }
+  .contenedor-boton{
+    margin-top: 5em;
   }
   .parrafo-fondo {
     font-size: 1.5em; 
