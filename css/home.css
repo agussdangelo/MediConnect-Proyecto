@@ -2,6 +2,10 @@
 
 /*Estilos del HEADER */
 
+.navbar-toggler-icon{
+  color: #fff;
+}
+
 .inicioSesion {
   margin-left: auto; /* Empuja el botón hacia la derecha */
   padding-left: 10px; /* Espacio entre los elementos */
@@ -25,7 +29,6 @@
 }
 
 .container-menu {
- 
   top: 0;
   display: flex;
   align-items: center;
@@ -80,14 +83,12 @@
   width: 100%;
   height: auto;
   margin-bottom: 2em;
- 
 }
 
 .hero-background {
- background-position: center top;
- background-size: cover;
- background-repeat: no-repeat;
- 
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
 
@@ -163,9 +164,35 @@
   padding-bottom: 0.7em;
 }
 
-.card:hover,
 .card-servicio:hover {
   transform: scale(1.1);
+  transition: 0.4s;
+  background-color: #001330;
+  color: #fff;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.card-servicio {
+  width: 70%;
+  margin: 1em;
+  transition: transform 0.7s;
+  padding-bottom: 0.7em;
+}
+
+.card {
+  width: 70%;
+  margin: 1.5em;
+  transition: transform 0.7s;
+  padding-bottom: 0.7em;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  color: #0076d4;
 }
 
 .card-body,
@@ -181,6 +208,9 @@
 
 .contenedor-boton {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilos del FOOTER */
@@ -380,7 +410,6 @@
   .contenedor-titulo {
     margin: auto;
   }
- 
   
 }
 @media only screen and (max-width: 425px) {
@@ -405,8 +434,13 @@
   .contenedor-titulo {
     margin-top: 5%; 
   }
+  .titulo-medic-servicio{
+    margin-top: 8em;
+    text-align: center;
+  }
   .titulo-medic {
     font-size: 3em; 
+    margin-top: -1em;
   }
   .contenedor-servicios {
     margin-top: 30px; 
@@ -424,12 +458,13 @@
   .card,
   .card-servicio {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
   .section-home{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
