@@ -108,7 +108,9 @@
 
 .texto-fondo {
   font-size: 4.9em;
-  width: 55%;
+  width: 52%;
+  bottom: 90px;
+  position: relative;
 }
 
 .parrafo-fondo {
@@ -375,10 +377,8 @@
     margin: auto;
   }
   .contenedor-servicios {
-    
     flex-direction: column;
     align-items: center;
-   
   }
   .titulo-medic {
     font-size: 3em;
@@ -414,7 +414,6 @@
 }
 @media only screen and (max-width: 425px) {
   .hero-background {
-    
     background-position: top center;
     height: 55vh; 
     width: 100vw;
