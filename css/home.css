@@ -1,163 +1,208 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Lexend Deca Variable', sans-serif;
-}
+
 
 /*Estilos del HEADER */
 
-
-.hover-slide {
-  transition: transform 0.3s ease;
- 
+.inicioSesion {
+  margin-left: auto; /* Empuja el botón hacia la derecha */
+  padding-left: 10px; /* Espacio entre los elementos */
 }
 
-header{
+.inicioSesion button {
+  text-decoration: #001330; /* No es una propiedad válida para text-decoration */
+  margin-right: 10px;
+}
+
+.encabezado{
   top: 0;
-  position: relative;
+  width: 100%;
+  padding: 0 0;
 }
 
 .navbar{
-    background-color: #001330;
-    font-size: 20px;
+  background-color: #001330;
+  font-size: 20px;
+  top: 0;
+}
 
-  }
+.container-menu {
+ 
+  top: 0;
+  display: flex;
+  align-items: center;
+}
 
-  .nav-link{
-    color: white;
-  }
+.navbar-nav {
+  display: flex;
+}
 
-  .container-menu{
-    margin: 10px;
-    top: 0;
-    display: flex;
-    align-items: center;
-  }
-
-  .navbar-nav{
-    display: flex;
-    margin-right: auto;
-  }
-
-.inicioSesion{
+.inicioSesion {
   display: flex;
   padding-right: 12px;
   margin-left: auto;
+}
+
+.texto-fondo {
+  font-size: 4.9em;
+  width: 55%;
+}
+
+.texto-fondo strong{
+  color: #0076d4;
+}
+
+.parrafo-fondo {
+  font-size: 2em;
+  width: 40%;
+  margin-top: 1em;
+}
+
+/*Estilos MAIN y SECCION IMAGEN */
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca Variable', sans-serif;
+}
+
+
+
+
+/* Estilos de la sección hero */
+
+.container{
+  width: 100%;
+
+}
+
+.hero-section {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+ 
+}
+
+.hero-background {
+ background-position: center top;
+ background-size: cover;
+ background-repeat: no-repeat;
+ 
+  width: 100%;
+  height: 100vh;
+
+  
   
 }
 
-.texto-fondo{
-  font-size: 5em;
-  width: 50%;
+
+.hero-content {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  
 }
 
-.parrafo-fondo{
+.texto-fondo {
+  font-size: 4.9em;
+  width: 55%;
+}
+
+.parrafo-fondo {
   font-size: 2em;
   width: 40%;
-}
-
-
-<<<<<<< HEAD
-footer {
-  background-color: #f8f9fa;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 5em;
-}
-
- @media (max-height:800px) {
-  footer {
-      position: static;
-=======
-/*Estilos MAIN y SECCION IMAGEN */
-
-.text-center{
-  margin-top: 2em;
-}
-
-.titulo-medic{
-  padding: 0.2em;
-}
-
-.text-center h5{
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
-main.container {
-    padding: 0;
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 100%;
-  }
+/* Estilos de los cards y secciones */
+.main.container {
+  padding: 0;
+  margin: 0 auto;
 
-.col {
-  display: flex;
-  justify-content: center;
 }
 
-  .card {
-    width: 70%;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
->>>>>>> 8f057fc5bbc4f640dc6cf6f028e3856b9e2496d8
-  }
-  header {
-      padding-top: 40px;
-  }
-} 
+.contenedor-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
 
-<<<<<<< HEAD
+.titulo-medic {
+  font-size: 4em;
+}
+
+.contenedor-servicios {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 50px;
+}
+
+.text-center{
+  margin-bottom: 5em;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.card,
+.card-servicio {
+  width: 70%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  transition: transform 0.7s;
+  padding-bottom: 0.7em;
+}
+
+.card:hover,
+.card-servicio:hover {
+  transform: scale(1.1);
+}
+
+.card-body,
+.card-body-otro {
+  height: 10em;
+}
+
+.card-body-otro {
+  height: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contenedor-boton {
+  margin-top: 40px;
+}
+
+/* Estilos del FOOTER */
 .footer-contenedor {
   background-color: #2d2a30;
   box-sizing: border-box;
   width: 100%;
-  height: auto;
   text-align: left;
   font: bold 1em sans-serif;
   padding: 3.1em 3.1em 3.7em 3.1em;
-  
-=======
-  .card-body{
-    height: 10em;
-  }
-  
-  .card-body i{
-    margin-top: 0.1em;
-    text-align: center;
-  }
-
-  .card-body-otro{
-    height: 180px;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-
-  .contenedor-boton{
-    margin-top: 40px;
-  }
-  
-.contenedor-titulo{
-  display: flex;
-  justify-content: center;
-<<<<<<< HEAD
-  margin-top: 25%;
->>>>>>> 8f057fc5bbc4f640dc6cf6f028e3856b9e2496d8
-=======
-  margin-top: 2%;
->>>>>>> 691f61816419f26437d0377caecdf1ed21992784
+  margin-top: 50px; /* Ajuste para separar del contenido */
 }
 
-.footer-contenedor .footer-izquierda, .footer-contenedor .footer-center, .footer-contenedor .footer-derecha {
+.footer-contenedor .footer-izquierda,
+.footer-contenedor .footer-center,
+.footer-contenedor .footer-derecha {
   display: inline-block;
   vertical-align: top;
 }
 
-/* La parte izquierda del footer */
-
 .footer-contenedor .footer-izquierda {
-  width: 30%;
+  width: 32%;
 }
 
 .footer-contenedor h3 {
@@ -166,27 +211,21 @@ main.container {
   margin: 0;
 }
 
-
 .footer-contenedor h3 span {
   color: #1aabee;
 }
 
-/* La parte de links del footer */
+.footer-links a {
+  width: 100%;
+  height: 100%;
+  margin-left: 1em;
+}
 
 .footer-contenedor .footer-links {
   color: #ffffff;
-  margin: 1.2em 0 0.7em;
+  margin: 1em 0 1em;
 }
 
-.footer-contenedor .footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit;
-  padding-left: 0.4em;
-}
-
-<<<<<<< HEAD
 .footer-contenedor .footer-derechos {
   color: #8f9296;
   font-size: 0.8em;
@@ -194,11 +233,25 @@ main.container {
   margin: 0;
 }
 
-/* La parte central del footer*/
+.integrantes a:hover {
+  color: #3F71EA;
+}
+
+.footer-contenedor .footer-center .contacto {
+  color: #1aabee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
 
 .footer-contenedor .footer-center {
-  width: 35%;
+  width: 30%;
   padding-left: 2em;
+  margin-right: 3em;
 }
 
 .footer-contenedor .footer-center i {
@@ -248,10 +301,15 @@ main.container {
   text-decoration: none;
 }
 
-/* La parte derecha del footer*/
-
 .footer-contenedor .footer-derecha {
   width: 30%;
+}
+
+.footer-contenedor .footer-derecha .materia {
+  margin-top: 3.3em;
+  width: 100%;
+  color: #857f7f;
+  text-align: right;
 }
 
 .footer-contenedor .footer-acerca-de-compañia {
@@ -272,250 +330,108 @@ main.container {
   margin-bottom: 1.25em;
 }
 
-.footer-links a:hover {
-  color: #3F71EA;
-}
-=======
-  .hero-background {
-    background-size: cover;
-    background-position: center;
-    height: 100%; 
-  }
-  
-  .hero-content {
-    display: flex;
-    position: relative;
- top: 100px;
-    font-size: 16px;  
-  }
+/* Media Queries para Responsive */
 
+
+@media only screen and (max-width: 1024px) {
+  .hero-background {
+    height: 60%;
+  }
+  .hero-content {
+    font-size: 11px;
+    height: auto;
+  }
   .contenedor-titulo {
     margin: auto;
   }
-
-  
-
-  @media only screen and (max-width: 1024px) {
+  .contenedor-servicios {
     
-    .container{
-     height: 105em;
-    }
-    
-    .hero-background {
-      background-size: cover;
-      background-position: center;
-      height: 60%;
-    }
-
-    .hero-content {
-      display: flex;
-      position: relative;
-      font-size: 11px;  
-    }
-
-    .contenedor-titulo {
-      margin: auto;
-      display: flex;
-      position: relative;
-    }
-
-    .contenedor-servicios {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      bottom: 250px;
-      height: 370px;
-      
-    }
-
-   .titulo-medic{
-    
-    justify-content: space-between;
-    position: relative;
-    bottom: 260px;
+    flex-direction: column;
+    align-items: center;
    
-   }
-
-   .subtitlo-medic{
-    justify-content: space-between;
-    position: relative;
-    bottom: 260px;
-    
-   }
-
-   .row{
-     display: flex;
-      justify-content: space-between;
-      position: relative;
-      bottom: 250px;
-      height: 370px;
-      
-   }
-
-   .contenedor-boton{
-    position: relative;
-    bottom: 250px;
-   }
-
-   .footer-contenedor{
-    margin: auto;
-   }
-
-
-   @media only screen and (max-width: 768px) {
-    
-    .container{
-      height: 115em;
-     }
-   
-    .hero-background {
-      background-size: cover;
-      background-position: center;
-      height: 50%;
-      
-    }
-
-    .hero-content {
-      display: flex;
-      position: relative;
-      
-      font-size: 8px;  
-    }
-
-
-    .menu {
-      display: none;
-    }
-
-    .contenedor-titulo {
-      margin: auto;
-      display: flex;
-      position: relative;
-      bottom: 400px;
-    }
-
-    .contenedor-servicios {
-      display: flex;
-      position: relative;
-      flex-wrap: wrap;
-      bottom: 370px;
-      height: 340px;
-      
-     font-size: 14px;
-    }
-    
-    .card-body-otro{
-      
-    }
-
-    .titulo-medic{
-    
-      justify-content: space-between;
-      position: relative;
-      font-size: 50px;
-      bottom: -40px;
   }
-
-  .subtitlo-medic{
-    justify-content: space-between;
-    position: relative;
-    bottom: -20px;
-  
+  .titulo-medic {
+    font-size: 3em;
   }
   .row{
     display: flex;
-     justify-content: space-between;
-     position: relative;
-     bottom: -20px;
+    flex-direction: column;
+    gap: 1em;
     
   }
-
-  .card{
-    width: 120%;
-    font-size: 15px;
-  }
-
-  .contenedor-boton{
-   position: relative;
-   bottom: -5px;
-  }  
-
-  .footer-center{
-    display: flex;
-    position: relative;
-    left: 200px;
-   }
-
-
-   .footer-acerca-de-compañia {
-    width: 50em;
-
-
-}
-
-}
-@media only screen and (max-width: 425px) {
-  
-  .hero-content h5{
-    max-width: 75%;
-  }
-  
-  .hero-content h1,
-  .hero-content h5 {
-    padding: 0.1em; 
-    display: inline-block; 
-  }
-
-  .navbar{
-    display: flex;
-    width: max-content;
-  }
-  
-  .hero-background {
-    background-position: left;
+  .col{
     width: 100%;
-    height: 100%;
-    
   }
+  .card{
+    width: 100%;
+  }
+}
 
+@media only screen and (max-width: 900px) {
+  .hero-background {
+    height: 50%;
+  }
   .hero-content {
-    display: flex;
-    position: relative;
-    
+    font-size: 8px;
   }
-
-.texto-fondo{
-  width: 60%;
-}
-
-
-  .parrafo-fondo{
-    font-size: 30px;
+  .menu {
+    display: none;
   }
-  
-.boton-hero{
-  
-}
-
   .contenedor-titulo {
     margin: auto;
-    display: flex;
-    position: relative;
-    bottom: 30px;
   }
-
-  .contenedor-servicios {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    bottom: 30px;
-    height: 340px;
-    
-   font-size: 14px;
-  }
+ 
   
-  
-
 }
+@media only screen and (max-width: 425px) {
+  .hero-background {
+    
+    background-position: top center;
+    height: 55vh; 
+    width: 100vw;
   }
->>>>>>> 691f61816419f26437d0377caecdf1ed21992784
+  .hero-content {
+    font-size: 10px; 
+  }
+  .texto-fondo {
+    font-size: 3em;
+
+  }
+  .parrafo-fondo {
+    font-size: 1.5em; 
+    width: 100%; 
+    margin-top: 3em; 
+  }
+  .contenedor-titulo {
+    margin-top: 5%; 
+  }
+  .titulo-medic {
+    font-size: 3em; 
+  }
+  .contenedor-servicios {
+    margin-top: 30px; 
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .col {
+    width: 100%;
+  }
+  .card,
+  .card-servicio {
+    width: 100%;
+  }
+  .section-home{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+  }
+}
+
+
+
