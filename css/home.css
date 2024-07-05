@@ -134,7 +134,6 @@
   font-size: 4em;
 }
 
-<<<<<<< HEAD
 .titulo-medic-servicio {
   font-size: 4em;
   margin-top: 10%;
@@ -146,8 +145,6 @@
   margin: 10px;
 }
 
-=======
->>>>>>> a413331f2b0c13e2177fca33284bb2dce854b905
 .contenedor-servicios {
   display: flex;
   justify-content: space-between;
@@ -235,17 +232,11 @@
   margin-left: 1em;
 }
 
-<<<<<<< HEAD
 .hero-background {
   background-size: cover;
   background-position: center;
   height: 100%;
   position: absolute;
-=======
-.footer-contenedor .footer-links {
-  color: #ffffff;
-  margin: 1em 0 1em;
->>>>>>> a413331f2b0c13e2177fca33284bb2dce854b905
 }
 
 .footer-contenedor .footer-derechos {
@@ -262,18 +253,9 @@
 .footer-contenedor .footer-center .contacto {
   color: #1aabee;
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   position: relative;
   top: 0;
-=======
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 0.4em;
-  margin-bottom: 0.5em;
-  font-size: 1.5em;
->>>>>>> a413331f2b0c13e2177fca33284bb2dce854b905
 }
 
 .footer-contenedor .footer-center {
@@ -372,11 +354,9 @@
   .contenedor-titulo {
     margin: auto;
   }
-  .contenedor-servicios {
-    
+  .contenedor-servicios {  
     flex-direction: column;
     align-items: center;
-   
   }
   .titulo-medic {
     font-size: 3em;
@@ -405,34 +385,6 @@
   .menu {
     display: none;
   }
-<<<<<<< HEAD
-=======
-  .contenedor-titulo {
-    margin: auto;
-  }
- 
-  
-}
-@media only screen and (max-width: 425px) {
-  .hero-background {
-    
-    background-position: top center;
-    height: 55vh; 
-    width: 100vw;
-  }
-  .hero-content {
-    font-size: 10px; 
-  }
-  .texto-fondo {
-    font-size: 3em;
-
-  }
-  .parrafo-fondo {
-    font-size: 1.5em; 
-    width: 100%; 
-    margin-top: 3em; 
-  }
->>>>>>> a413331f2b0c13e2177fca33284bb2dce854b905
   .contenedor-titulo {
     margin-top: 5%; 
   }
@@ -457,10 +409,9 @@
     width: 100%;
   }
   .section-home{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
   }
 }
 
