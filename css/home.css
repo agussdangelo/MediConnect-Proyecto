@@ -31,6 +31,12 @@
   align-items: center;
 }
 
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar-nav {
   display: flex;
 }
@@ -96,6 +102,7 @@
 }
 
 
+
 .hero-content {
   display: flex;
   text-align: left;
@@ -127,10 +134,14 @@
 .contenedor-titulo {
   display: flex;
   justify-content: center;
-  margin-top: 8%;
+  margin-top: 7%;
 }
 
 .titulo-medic {
+  font-size: 4em;
+}
+
+.titulo-medic-servicio{
   font-size: 4em;
 }
 
@@ -147,13 +158,13 @@
   margin-bottom: 5em;
 }
 
-.row{
+.contendor-cold{
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  
 }
+
 .card,
 .card-servicio {
   width: 70%;
@@ -177,6 +188,7 @@
   height: 180px;
   margin-top: 10px;
   margin-left: 10px;
+
 }
 
 .contenedor-boton {
@@ -365,6 +377,10 @@
   .card{
     width: 100%;
   }
+
+  .titulo-medic-servicio{
+    font-size: 3em;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -431,7 +447,29 @@
      justify-content: center;
      
   }
+
+  .titulo-medic-servicio{
+    font-size: 1.5em;
+  }
 }
 
+
+@media only screen and (max-width: 320px) {
+
+  .titulo-medic-servicio{
+    font-size: 1em;
+  }
+
+  .texto-fondo{
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 30px;
+  }
+  .parrafo-fondo{
+    color: transparent;
+    margin-bottom: -40px;
+  }
+
+}
 
 
