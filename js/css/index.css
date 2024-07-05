@@ -1,14 +1,65 @@
-footer {
-    position: static;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend Deca Variable', sans-serif;
+}
+
+/*Estilos del HEADER */
+
+.navbar{
+    background-color: #0075fc;
+  }
+
+.container-menu{
+    margin-left: 10px;
+}
+
+
+main.container {
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+  }
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Establece la altura al 100% de la ventana gráfica (viewport height) */
+}
+
+
+.hero-background {
+  background-size: cover;
+  background-position: center;
+  height: 100%; /* Ajusta la altura al 100% */
+}
+  
+.hero-content {
+  max-width: 40%; /* Establece un ancho máximo para mantener la legibilidad */
+}
+  
+.hero-content h5{
+  max-width: 75%;
+}
+  
+.hero-content h1,
+.hero-content h5 {
+    
+    padding: 0.1em; /* Ajusta según sea necesario */
+    display: inline-block; /* Para que el fondo abarque solo el contenido del texto */
+  }
+
+  footer {
+    position: fixed;
     bottom: 0;
 }
 
-@media (max-width:900px) {
-    .card-body{
-        position: relative;
-    }
-    .footer-contenedor {
-        display: none;
+@media (max-height:800px) {
+    footer {
+        position: static;
     }
     header {
         padding-top: 40px;
@@ -22,6 +73,7 @@ footer {
     text-align: left;
     font: bold 1em sans-serif;
     padding: 3.1em 3.1em 3.7em 3.1em;
+    margin-top: 5em;
 }
 
 .footer-contenedor .footer-izquierda, .footer-contenedor .footer-center, .footer-contenedor .footer-derecha {
@@ -32,12 +84,7 @@ footer {
 /* La parte izquierda del footer */
 
 .footer-contenedor .footer-izquierda {
-    width: 32%;
-}
-
-.footer-contenedor .footer-izquierda .integrantes{
-    color: #857f7f;
-    text-align: justify;
+    width: 30%;
 }
 
 .footer-contenedor h3 {
@@ -53,15 +100,17 @@ footer {
 
 /* La parte de links del footer */
 
-.footer-links a{
-    width: 100%;
-    height: 100%;
-    margin-left: 1em;
-}
-
 .footer-contenedor .footer-links {
     color: #ffffff;
-    margin: 1em 0 1em;
+    margin: 1.2em 0 0.7em;
+}
+
+.footer-contenedor .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 0.4em;
 }
 
 .footer-contenedor .footer-derechos {
@@ -71,27 +120,11 @@ footer {
     margin: 0;
 }
 
-.integrantes a:hover {
-    color: #3F71EA;
-}
-
 /* La parte central del footer*/
 
-.footer-contenedor .footer-center .contacto{
-    color: #1aabee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 0.4em;
-    margin-bottom: 0.5em;
-    font-size: 1.5em;
-}
-
 .footer-contenedor .footer-center {
-    width: 30%;
+    width: 35%;
     padding-left: 2em;
-    margin-right: 3em;
 }
 
 .footer-contenedor .footer-center i {
@@ -147,13 +180,6 @@ footer {
     width: 30%;
 }
 
-.footer-contenedor .footer-derecha .materia{
-    margin-top: 3.3em;
-    width: 100%;
-    color: #857f7f;
-    text-align: right;
-}
-
 .footer-contenedor .footer-acerca-de-compañia {
     line-height: 1.3em;
     color: #92999f;
@@ -171,4 +197,24 @@ footer {
     font-weight: bold;
     margin-bottom: 1.25em;
 }
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+/* @media (max-width: 880px) {
+    .footer-contenedor .footer-izquierda, .footer-contenedor .footer-center, .footer-contenedor .footer-derecha {
+        display: block;
+        width: 100%;
+        margin-bottom: 2.5em;
+        text-align: center;
+    }
+    .footer-contenedor .footer-center i {
+        margin-left: 0;
+    }
+}        */
+
+
+
+
 
