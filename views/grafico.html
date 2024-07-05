@@ -15,9 +15,17 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Alergología - MediConnect</title>
   <style>
+    
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .chart-container {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: 20px;
+      width: 30em;
+      
     }
 
     @media (max-width: 768px) {
@@ -26,6 +34,15 @@
         margin-bottom: 0;
       }
     }
+
+    @media (max-width: 425px) {
+      .container{
+      display: flex;
+      font-size: 10px;
+        }
+    }
+
+
   </style>
 </head>
 
@@ -57,7 +74,7 @@
     <section class="mt-5">
       <h3>Tipos de Consultas</h3>
       <div class="chart-container">
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="myChart"></canvas>
       </div>
     </section>
   </main>
