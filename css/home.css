@@ -108,7 +108,9 @@
 
 .texto-fondo {
   font-size: 4.9em;
-  width: 55%;
+  width: 52%;
+  bottom: 30px;
+  position: relative;
 }
 
 .parrafo-fondo {
@@ -185,7 +187,7 @@
 
 .card {
   width: 70%;
-  margin: 1.5em;
+  margin: auto;
   transition: transform 0.7s;
   padding-bottom: 0.7em;
 }
