@@ -1,15 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lexend Deca Variable', sans-serif;
-}
 
-body {
-  overflow-x: hidden;
-}
 
-/* Estilos del HEADER */
+/*Estilos del HEADER */
 
 .inicioSesion {
   margin-left: auto; /* Empuja el botón hacia la derecha */
@@ -17,24 +8,24 @@ body {
 }
 
 .inicioSesion button {
-  text-decoration: none; /* Corregido, text-decoration no admite color */
+  text-decoration: #001330; /* No es una propiedad válida para text-decoration */
   margin-right: 10px;
 }
 
-.encabezado {
+.encabezado{
   top: 0;
   width: 100%;
-  padding: 0;
+  padding: 0 0;
 }
 
-.navbar {
+.navbar{
   background-color: #001330;
   font-size: 20px;
   top: 0;
 }
 
 .container-menu {
-  margin: 10px;
+ 
   top: 0;
   display: flex;
   align-items: center;
@@ -55,7 +46,7 @@ body {
   width: 55%;
 }
 
-.texto-fondo strong {
+.texto-fondo strong{
   color: #0076d4;
 }
 
@@ -65,70 +56,72 @@ body {
   margin-top: 1em;
 }
 
-/* Estilos MAIN y SECCION IMAGEN */
+/*Estilos MAIN y SECCION IMAGEN */
 
-.text-center {
-  margin-top: 0.1em;
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca Variable', sans-serif;
 }
 
-.text-center h5 {
+
+
+
+/* Estilos de la sección hero */
+
+.container{
+  width: 100%;
+
+}
+
+.hero-section {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+ 
+}
+
+.hero-background {
+ background-position: center top;
+ background-size: cover;
+ background-repeat: no-repeat;
+ 
+  width: 100%;
+  height: 100vh;
+
+  
+  
+}
+
+
+.hero-content {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.texto-fondo {
+  font-size: 4.9em;
+  width: 55%;
+}
+
+.parrafo-fondo {
+  font-size: 2em;
+  width: 40%;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
-main.container {
+/* Estilos de los cards y secciones */
+.main.container {
   padding: 0;
   margin: 0 auto;
-  max-width: 100%;
-}
 
-.col {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  width: 70%;
-  margin: 1.5em;
-  transition: transform 0.7s;
-  padding-bottom: 0.7em;
-}
-
-.card-servicio {
-  width: 60%;
-  margin: 1.5em;
-  transition: transform 0.7s;
-  padding-bottom: 0.7em;
-}
-
-.card-servicio:hover {
-  transform: scale(1.1);
-  transition: 0.4s;
-  background-color: #001330;
-  color: #fff;
-}
-
-.card-body {
-  height: 10em;
-}
-
-.card:hover {
-  transform: scale(1.1);
-  color: #0076d4;
-}
-
-.card-body i {
-  margin-top: 0.1em;
-  text-align: center;
-}
-
-.card-body-otro {
-  height: 180px;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.contenedor-boton {
-  margin-top: 40px;
 }
 
 .contenedor-titulo {
@@ -141,6 +134,7 @@ main.container {
   font-size: 4em;
 }
 
+<<<<<<< HEAD
 .titulo-medic-servicio {
   font-size: 4em;
   margin-top: 10%;
@@ -152,148 +146,258 @@ main.container {
   margin: 10px;
 }
 
+=======
+>>>>>>> a413331f2b0c13e2177fca33284bb2dce854b905
 .contenedor-servicios {
   display: flex;
   justify-content: space-between;
-  margin: 50px 8%;
+  margin-top: 50px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 50px;
 }
 
-.hero-section {
-  position: relative;
+.text-center{
+  margin-bottom: 5em;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.card,
+.card-servicio {
+  width: 70%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  transition: transform 0.7s;
+  padding-bottom: 0.7em;
+}
+
+.card:hover,
+.card-servicio:hover {
+  transform: scale(1.1);
+}
+
+.card-body,
+.card-body-otro {
+  height: 10em;
+}
+
+.card-body-otro {
+  height: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contenedor-boton {
+  margin-top: 40px;
+}
+
+/* Estilos del FOOTER */
+.footer-contenedor {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 1em sans-serif;
+  padding: 3.1em 3.1em 3.7em 3.1em;
+  margin-top: 50px; /* Ajuste para separar del contenido */
+}
+
+.footer-contenedor .footer-izquierda,
+.footer-contenedor .footer-center,
+.footer-contenedor .footer-derecha {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-contenedor .footer-izquierda {
+  width: 32%;
+}
+
+.footer-contenedor h3 {
+  color: #ffffff;
+  font-size: 3em;
+  margin: 0;
+}
+
+.footer-contenedor h3 span {
+  color: #1aabee;
+}
+
+.footer-links a {
   width: 100%;
   height: 100%;
+  margin-left: 1em;
 }
 
+<<<<<<< HEAD
 .hero-background {
   background-size: cover;
   background-position: center;
   height: 100%;
   position: absolute;
+=======
+.footer-contenedor .footer-links {
+  color: #ffffff;
+  margin: 1em 0 1em;
+>>>>>>> a413331f2b0c13e2177fca33284bb2dce854b905
 }
 
-.hero-content {
+.footer-contenedor .footer-derechos {
+  color: #8f9296;
+  font-size: 0.8em;
+  font-weight: normal;
+  margin: 0;
+}
+
+.integrantes a:hover {
+  color: #3F71EA;
+}
+
+.footer-contenedor .footer-center .contacto {
+  color: #1aabee;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   position: relative;
   top: 0;
+=======
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+>>>>>>> a413331f2b0c13e2177fca33284bb2dce854b905
 }
 
-.hero-content .texto-fondo {
-  max-width: 100%;
+.footer-contenedor .footer-center {
+  width: 30%;
+  padding-left: 2em;
+  margin-right: 3em;
 }
 
-.hero-content .parrafo-fondo {
-  max-width: 100%;
+.footer-contenedor .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 1.5em;
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.6em;
+  margin: 0.6em 0.7em;
+  vertical-align: middle;
 }
 
-.hero-content h1,
-.hero-content h5 {
-  padding: 0.1em;
+.footer-contenedor .footer-center i.fa-envelope {
+  font-size: 1.2em;
+  line-height: 2.3em;
+}
+
+.footer-contenedor .footer-center i.fa-map-marker {
+  font-size: 1.2em;
+  line-height: 2.3em;
+}
+
+.footer-contenedor .footer-center i.fa-phone {
+  font-size: 1.2em;
+  line-height: 2.3em;
+}
+
+.footer-contenedor .footer-center p {
   display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 1920px) {
-  .hero-section {
-    height: 70vh;
-  }
-  .hero-content {
-    font-size: 20px;
-  }
-  .contenedor-titulo {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    text-align: center;
-  }
-  
+.footer-contenedor .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.8em;
+  line-height: 2;
 }
 
-@media only screen and (max-width: 1440px) {
-  .hero-background {
-    height: 90%;
-  }
-  .hero-content {
-    font-size: 16px;
-  }
-  .contenedor-titulo {
-    margin: auto;
-  }
+.footer-contenedor .footer-center p a {
+  color: #1aabee;
+  text-decoration: none;
 }
+
+.footer-contenedor .footer-derecha {
+  width: 30%;
+}
+
+.footer-contenedor .footer-derecha .materia {
+  margin-top: 3.3em;
+  width: 100%;
+  color: #857f7f;
+  text-align: right;
+}
+
+.footer-contenedor .footer-acerca-de-compañia {
+  line-height: 1.3em;
+  color: #92999f;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 0;
+  text-align: justify;
+  margin-top: 1em;
+}
+
+.footer-contenedor .footer-acerca-de-compañia span {
+  display: block;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 1.25em;
+}
+
+/* Media Queries para Responsive */
+
 
 @media only screen and (max-width: 1024px) {
-  .container {
-    height: 105em;
-  }
   .hero-background {
-    height: 100%;
+    height: 60%;
   }
   .hero-content {
     font-size: 11px;
+    height: auto;
   }
   .contenedor-titulo {
     margin: auto;
   }
-  .titulo-medic {
-    bottom: 260px;
-  }
-  .subtitulo-medic {
-    bottom: 260px;
-  }
-  .card-servicio {
+  .contenedor-servicios {
+    
+    flex-direction: column;
+    align-items: center;
    
   }
-  .row {
-    bottom: 250px;
-    height: auto;
+  .titulo-medic {
+    font-size: 3em;
   }
-  .contenedor-boton {
-    bottom: 250px;
-  }
-  .footer-contenedor {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .footer-contenedor{
-    display: none;
-  }
-  .contenedor-titulo {
-    margin-top: 8em;
-    margin-bottom: 5em;
-    text-align: center;
-  }
-  .contenedor-servicios {
-    justify-content: center;
-    align-items: center;
+  .row{
+    display: flex;
     flex-direction: column;
-    margin-top: 10%;
-    height: 100%;
-    font-size: 14px;
+    gap: 1em;
+    
   }
-  #primeraTarjeta{
-    margin-top: 22%;
-  }
-  .contenedor-boton{
-    margin-top: 1em;
-  }
-  .text-center{
-    margin-top: -1%;
+  .col{
+    width: 100%;
   }
   .card{
     width: 100%;
-    height: 100%;
-    padding-bottom: 10em;
   }
 }
-@media only screen and (max-width: 480px) {
- 
-  .footer-contenedor{
-    display: none;
-  }
+
+@media only screen and (max-width: 900px) {
   .hero-background {
-    height: 65%;
+    height: 50%;
   }
   .hero-content {
     font-size: 8px;
@@ -301,85 +405,64 @@ main.container {
   .menu {
     display: none;
   }
+<<<<<<< HEAD
+=======
   .contenedor-titulo {
-    display: flex;
-    position: relative;
-    bottom: 220px;
+    margin: auto;
+  }
+ 
+  
+}
+@media only screen and (max-width: 425px) {
+  .hero-background {
     
-    text-align: center;
+    background-position: top center;
+    height: 55vh; 
+    width: 100vw;
+  }
+  .hero-content {
+    font-size: 10px; 
+  }
+  .texto-fondo {
+    font-size: 3em;
+
+  }
+  .parrafo-fondo {
+    font-size: 1.5em; 
+    width: 100%; 
+    margin-top: 3em; 
+  }
+>>>>>>> a413331f2b0c13e2177fca33284bb2dce854b905
+  .contenedor-titulo {
+    margin-top: 5%; 
+  }
+  .titulo-medic {
+    font-size: 3em; 
   }
   .contenedor-servicios {
-    justify-content: center;
-    align-items: center;
+    margin-top: 30px; 
     flex-direction: column;
-    position: relative;
-    bottom: 220px;
-    height: 100%;
-    font-size: 14px;
+    align-items: center;
   }
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .col {
+    width: 100%;
+  }
+  .card,
   .card-servicio {
     width: 100%;
   }
-  #primeraTarjeta{
-    margin-top: 150%;
-  }
-  .text-center{
-    flex-direction: column;
-    position: relative;
-    bottom: 90px;
-  }
-  .titulo-medic {
-    font-size: 2.5em;
-  }
-  .titulo-medic-servicio {
-    font-size: 2.5em;
-    margin-top: -1em;
-  }
-  .card{
-    width: 100%;
-    height: 100%;
-    padding-bottom: 5em;
-  }
-  .card-body i{
-    font-size: 0.9em;
-  }
-
-  @media only screen and (max-width: 425px) {
-    .footer-contenedor{
-      display: none;
-    }
-    .texto-fondo{
-      font-size: 25px;
-      
-    }
-  
+  .section-home{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
   }
 }
 
-  @media only screen and (max-width: 375px) {
-    .footer-contenedor{
-      display: none;
-    }
-    .texto-fondo{
-      font-size: 20px;
-      
-    }
-  
-    @media only screen and (max-width:320px) {
-    
-      .footer-contenedor{
-        display: none;
-      }
-      .texto-fondo{
-        font-size: 25px;
-        height: 50px;
-        
-      }
-    
-      .parrafo-fondo{
-        color: transparent;
-      }
-    }
 
-  }
 
